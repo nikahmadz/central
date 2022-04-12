@@ -1,11 +1,14 @@
+---
+name: default
+---
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: "en-US" }}" data-layout="default">
+<html lang='{{ page.lang | default: site.lang | default: "en-US" }}' data-layout="{{ layout.name }}">
 <head>{% include head.html %}</head>
 <body>
 <main id="_main">
-<div id="_layout" class="container-lg px-3 my-5 markdown-body">
+<div id="_layout">
 <header id="_header">{% include header.html %}</header>
-<article id="_article">{{ content }}</article>
+<article id="_article" class="markdown-body">{{ content }}</article>
 <footer id="_footer">{% include footer.html %}</footer>
 <aside id="_credit">{% include credit.html %}</aside>
 </div>
