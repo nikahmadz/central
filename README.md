@@ -1,7 +1,7 @@
 &nbsp;
 
 <h1 align="center"><a href="https://nikahmadz.github.io/central">Central</a></h1>
-<p align="center">Jekyll Theme for GitHub Pages</p>
+<p align="center">Theme for GitHub Pages</p>
 
 &nbsp;
 
