@@ -11,15 +11,18 @@
 
 ## Usage
 
-Open your `_config.yml` file. Remove existing values of `theme` and `remote_theme` and set the following value.
+1. Open your `_config.yml` file.
+2. Remove existing values of `theme` and `remote_theme`.
+3. Then set the following value.
 
 ```yml
 remote_theme: nikahmadz/central
 ```
+- Activate **GitHub Pages** to publish your website.
 
-## Activating Github Pages
+## Publishing your website
 
-1. Go to **Github Pages Settings** of your repository:
+1. Go to **GitHub Pages Settings** of your repository:
     `//github.com/<user-name>/<repo-name>/settings/pages`
 2. Scroll down to the **Source** section.
 3. Choose the source of your website. eg: `main/(root)`
@@ -30,7 +33,7 @@ remote_theme: nikahmadz/central
 
 ## Getting help
 
-Having trouble with **Github Pages**?  
+Having trouble with **GitHub Pages**?  
 [Contact support](https://support.github.com/contact) or [discuss][] to sort it out.
 
 [discuss]: https://github.com/nikahmadz/central/discussions "Lets discuss about this project"
