@@ -1,5 +1,6 @@
 # GitHub Pages Configurations
 
+remote_theme: nikahmadz/central
 title: Central
 
 sass: # sass configurations
