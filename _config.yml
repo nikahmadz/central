@@ -1,0 +1,6 @@
+# GitHub Pages Configurations
+
+title: Central
+
+sass: # sass configurations
+  style: compressed
