@@ -9,7 +9,7 @@
 
 ***
 
-## Usage
+## Get started
 
 1. Open your `_config.yml` file.
 2. Remove existing values of `theme` and `remote_theme`.
@@ -19,6 +19,7 @@
 remote_theme: nikahmadz/central
 ```
 - Activate **GitHub Pages** to publish your website.
+
 
 ## Publishing your website
 
@@ -37,6 +38,7 @@ Having trouble with **GitHub Pages**?
 [Contact support](https://support.github.com/contact) or [discuss][] to sort it out.
 
 [discuss]: https://github.com/nikahmadz/central/discussions "Lets discuss about this project"
+
 
 ## Sponsor
 

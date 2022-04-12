@@ -1,4 +1,4 @@
-[//]: # central
+<!-- central -->
 
 # Change log
 
