@@ -45,3 +45,8 @@ Having trouble with **GitHub Pages**?
 ❤️ If you use this work and liked it, **please consider [supporting development][pay]**.
 
 [pay]: https://nikahmadz.github.io/#!pay "See payment options"
+
+## License
+
+Central is licensed under the **[MIT License](https://github.com/nikahmadz/central/blob/main/LICENSE)**  
+(c) Copyright of [nikahmadz](https://nikahmadz.github.io)
