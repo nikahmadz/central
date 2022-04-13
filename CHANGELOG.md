@@ -7,4 +7,3 @@
 - Add default layout & head elements
 - Update LICENSE term.
 - Add hero-1
-- Add frontmatter to layout snippets

@@ -13,7 +13,10 @@
     font-size:3.3rem;
     line-height:1;
     margin:1rem;
-    a{ color:inherit;text-decoration:inherit;&:hover{text-decoration:underline} }
+    a {
+      color:inherit;text-decoration:inherit;
+      &:hover{ text-decoration:underline;text-underline-offset:0.1em; }
+    }
   }
   .-desc { font-family:sans-serif;color:grey;margin:1rem; }
 }
