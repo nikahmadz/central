@@ -11,7 +11,7 @@
 
 ## Get started
 
-1. Open your `_config.yml` file.
+1. Open your `_config.yml` file (or create one).
 2. Remove existing values of `theme` and `remote_theme`.
 3. Then set the following value.
 
@@ -26,16 +26,18 @@ remote_theme: nikahmadz/central
 1. Go to **GitHub Pages Settings** of your repository:
     `//github.com/<user-name>/<repo-name>/settings/pages`
 2. Scroll down to the **Source** section.
-3. Choose the source of your website. eg: `main/(root)`
-4. Click **Save**.
+3. Choose the source of your website and hit **Save**.  eg: `main/(root)`
 
 - Your app will be accessible at `//<user-name>.github.io/<repo-name>`.
 
 
 ## Getting help
 
-Having trouble with **GitHub Pages**?  
-[Contact support](https://support.github.com/contact) or [discuss][] to sort it out.
+> Having trouble with **GitHub Pages** ?  
+
+Check out the [official documentation](https://docs.github.com/en/pages),
+[discuss][] about it,
+or [contact support](https://support.github.com/contact) to sort it out.
 
 [discuss]: https://github.com/nikahmadz/central/discussions "Lets discuss about this project"
 
@@ -48,7 +50,7 @@ Having trouble with **GitHub Pages**?
 
 ## License
 
-[MIT][] licensed.  
-Copyright (c) 2022 - [nikahmadz](https://nikahmadz.github.io)  
+[MIT][] licensed - [nikahmadz][]
 
 [MIT]: https://github.com/nikahmadz/central/blob/main/LICENSE "View license"
+[nikahmadz]: https://nikahmadz.github.io "Visit my website"
