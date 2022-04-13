@@ -5,5 +5,15 @@
 #_credit {
   position:absolute;position:fixed;
   bottom:0;right:0;left:auto;top:auto;
-  padding:.5rem
+  padding:.5rem;
+}
+
+.hero-1 {
+  .-title {
+    font-size:3.3rem;
+    line-height:1;
+    margin:1rem;
+    a{ color:inherit;text-decoration:inherit;&:hover{text-decoration:underline} }
+  }
+  .-desc { font-family:sans-serif;color:grey;margin:1rem; }
 }
