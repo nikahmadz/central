@@ -48,5 +48,7 @@ Having trouble with **GitHub Pages**?
 
 ## License
 
-Central is licensed under the [MIT License](https://github.com/nikahmadz/central/blob/main/LICENSE)  
-Copyright (c) 2022 - [nikahmadz](https://nikahmadz.github.io)
+[MIT][] licensed.  
+Copyright (c) 2022 - [nikahmadz](https://nikahmadz.github.io)  
+
+[MIT]: https://github.com/nikahmadz/central/blob/main/LICENSE "View license"
