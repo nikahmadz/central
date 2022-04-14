@@ -3,7 +3,7 @@
 # Change log
 
 ## v0.1.2
-- update central, add utilities, rouge and housekeep
+- update central theme, add utilities, rouge and housekeep
 
 ## v0.1.1
 - update credit, license and configurations
