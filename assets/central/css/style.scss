@@ -2,6 +2,45 @@
 ---
 /*! (c) Copyright : github.com/nikahmadz */
 
+::-webkit-scrollbar {
+  background: 0;
+  cursor: default;
+  height: 14px;
+  width: 14px;
+}
+
+::-webkit-scrollbar-corner {
+  background: 0;
+}
+
+::-webkit-resizer {
+  background: 0;
+  border: 3px solid rgba(grey, 0);
+  border-right-color: rgba(grey, 0.5);
+  border-bottom-color: rgba(grey, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: 0;
+  border: 5px solid rgba(grey, 0);
+  border-radius: 7px;
+  box-shadow: 0 0 0 2px gray inset;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 0 4px grey inset;
+  border-width: 4px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  border-width: 5px;
+}
+
+pre {
+  overflow:auto;
+  padding:.5rem;
+}
+
 #_credit {
   position:absolute;position:fixed;
   bottom:0;right:0;left:auto;top:auto;
@@ -21,7 +60,7 @@
       &:hover{ text-decoration:underline;text-underline-offset:0.1em; }
     }
   }
-  
+
   .-desc { font-family:sans-serif;color:grey;margin:1rem; }
 
 }
