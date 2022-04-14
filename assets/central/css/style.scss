@@ -11,3 +11,9 @@ pre {
   border:1px solid grey;
   border-radius:.3rem;
 }
+
+#_main { font-family:sans-serif }
+#_layout { max-width:600px;margin:auto }
+#_article {
+  h1,h2,h3,h4,h5,h6 { margin-top:2em }
+}
