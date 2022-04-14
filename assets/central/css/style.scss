@@ -4,45 +4,10 @@
 
 @import "base-scroll";
 @import "rouge-base16-dark";
-
-html,body { margin:auto }
-
-.block { display:block }
-.inblock { display:inline-block }
+@import "utilities";
 
 pre {
-  overflow:auto;
   padding:.5rem;
   border:1px solid grey;
   border-radius:.3rem;
-}
-
-#_credit {
-  position:absolute;position:fixed;
-  bottom:0;right:0;left:auto;top:auto;
-  padding:.5rem;
-}
-
-.hero-1 {
-
-  margin:30vh auto;
-
-  .-title {
-    font-size:3.3rem;
-    line-height:1;
-    margin:1rem;
-    a {
-      color:inherit;text-decoration:inherit;
-      &:hover{ text-decoration:underline;text-underline-offset:0.1em; }
-    }
-  }
-
-  .-desc { font-family:sans-serif;color:grey;margin:1rem; }
-
-}
-
-.justify-text { text-align:justify }
-.border-0 { border:0 }
-.normal-wrap {
-  pre.highlight { white-space:normal }
 }
