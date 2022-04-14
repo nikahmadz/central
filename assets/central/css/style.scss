@@ -6,11 +6,17 @@
 @import "rouge-base16-dark";
 @import "utilities";
 
-pre {
-  padding:.5rem;
+div.highlight {
+  background:#111;
+  border-radius:.3rem;
+  code { color:slategray }
+}
+pre.highlight {
+  padding:1rem;
   border:1px solid grey;
   border-radius:.3rem;
 }
+
 
 #_main { font-family:sans-serif }
 #_layout { max-width:600px;margin:auto }
