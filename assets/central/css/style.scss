@@ -9,6 +9,9 @@
 }
 
 .hero-1 {
+
+  margin:30vh auto;
+
   .-title {
     font-size:3.3rem;
     line-height:1;
@@ -18,5 +21,7 @@
       &:hover{ text-decoration:underline;text-underline-offset:0.1em; }
     }
   }
+  
   .-desc { font-family:sans-serif;color:grey;margin:1rem; }
+
 }
