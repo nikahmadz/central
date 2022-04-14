@@ -5,6 +5,8 @@
 @import "rouge-base16-dark";
 @import "base-scroll";
 
+html,body { margin:auto }
+
 pre {
   overflow:auto;
   padding:.5rem;
