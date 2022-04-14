@@ -2,14 +2,19 @@
 ---
 /*! (c) Copyright : github.com/nikahmadz */
 
-@import "rouge-base16-dark";
 @import "base-scroll";
+@import "rouge-base16-dark";
 
 html,body { margin:auto }
+
+.block { display:block }
+.inblock { display:inline-block }
 
 pre {
   overflow:auto;
   padding:.5rem;
+  border:1px solid grey;
+  border-radius:.3rem;
 }
 
 #_credit {
@@ -34,4 +39,10 @@ pre {
 
   .-desc { font-family:sans-serif;color:grey;margin:1rem; }
 
+}
+
+.justify-text { text-align:justify }
+.border-0 { border:0 }
+.normal-wrap {
+  pre.highlight { white-space:normal }
 }
