@@ -9,7 +9,7 @@
 
 ***
 
-## Get started
+## Usage
 
 1. Open your `_config.yml` file (or create one).
 2. Remove existing values of `theme` and `remote_theme`.
