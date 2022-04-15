@@ -9,7 +9,9 @@
 div.highlight {
   background:#111;
   border-radius:.3rem;
-  code { color:slategray }
+  code { color:cadetblue }
+  .p,.pi { color:slategrey }
+  .o,.ow { color:indianred }
 }
 pre.highlight {
   padding:1rem;
