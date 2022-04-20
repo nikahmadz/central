@@ -1,5 +1,4 @@
 ---
-permalink: test
 title: "Test Page"
 
 categories:
