@@ -1,6 +1,7 @@
 %container {&:before,&:after { content:'';display:table;clear:both }}
 
-html,body { margin:0;min-height:100%;@extend %container; }
+html,body { margin:0;min-height:100% }
+body { @extend %container; }
 pre { overflow:auto }
 
 .justify-text { text-align:justify }
@@ -8,11 +9,20 @@ pre { overflow:auto }
   pre.highlight { white-space:normal }
 }
 
+body,
+#_main,
+#_layout,
+#_credit { background:inherit }
+
 #_credit {
   position:absolute;position:fixed;
   bottom:0;right:0;left:auto;top:auto;
-  padding:.5rem;
+  padding:.3rem .5rem;
+  box-shadow:-1px -1px 4px 1px #0007;
+  border-radius:5px 0 0 0;
 }
+
+.markdown-body { @extend %container; }
 
 .hero-1 {
 
