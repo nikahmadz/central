@@ -121,3 +121,9 @@ a {
   letter-spacing:-1px;
   line-height:1.2;
 }
+
+.hero-1 {
+
+  .-title { a { &:hover{ text-decoration:none } } }
+
+}

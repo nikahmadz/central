@@ -79,6 +79,7 @@ a.reversefootnote:hover { text-decoration:none; }
     font-size:3.3rem;
     line-height:1;
     margin:1rem;
+    color:inherit;
     a {
       color:inherit;text-decoration:inherit;
       &:hover{ text-decoration:underline;text-underline-offset:0.1em; }
