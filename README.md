@@ -43,12 +43,14 @@ Then, activate **GitHub Pages** to publish your website.
 - Your app will be accessible at `//<user-name>.github.io/<repo-name>`.
 
 
-## How it works
+## Writing content
 
 **[GitHub Pages][]** uses [Jekyyll][jekyllrb.com] to build your website from the content of your files.
+You can write in Markdown and HTML using any code editor you like.
 Check out these articles to familiarize your self on the basics:
 - [Official documentation][] of GitHub Pages
 - Jekyll [front-matter][], [writing posts][], and [creating pages][].
+- [Basic writing and formatting syntax][basics].
 
 [GitHub Pages]: https://pages.github.com/
 [Official documentation]: https://docs.github.com/en/pages "GitHub Pages Documentation"
@@ -56,7 +58,51 @@ Check out these articles to familiarize your self on the basics:
 [front-matter]: https://jekyllrb.com/docs/frontmatter/ "Read more"
 [writing posts]: https://jekyllrb.com/docs/posts/
 [creating pages]: https://jekyllrb.com/docs/pages/
+[basics]: https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
+###### Example: `page.md`
+```markdown
+---
+# front-matter
+title: "Page title"
+description: "Short description on the article."
+permalink: # (optional: permalink)
+layout: # layout-name
+theme: # theme-name
+---
+<style>/* defining custom style for this page using html syntax */</style>
+
+# Header 1
+## Header 2
+### Header 3
+
+A paragraph using Markdown syntax.  
+**Bold** and _Italic_ and `Code` text
+
+\```
+Syntax highlighted code block
+\```
+
+> Blockquote
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+[Link](url)
+[Footnote][^ref]
+![Image](src)
+
+
+
+
+```
+
+> More examples can be found in the [docs][] folder.
+
+[docs]: https://github.com/nikahmadz/central/tree/main/docs
 
 ## Getting help
 
