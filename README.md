@@ -8,20 +8,20 @@
 ***
 
 **Central** helps you build websites on **GitHub**.
-You can write your content in Markdown and HTML using any code editor you like.
+You can write your content using any code editor you like.
 When you commit your code to your repository, **GitHub Pages** will build your website from the content of your files.
 
 ***
 
-## Getting started
+## Usage
 
-Create these files on your repository.
+Create these files in your repository.
 Then, activate **GitHub Pages** to publish your website.
 
 - `_config.yml`
-```yml
-remote_theme: nikahmadz/central
-```
+  ```yml
+  remote_theme: nikahmadz/central
+  ```
 
 - `index.md`
   ```markdown
@@ -33,7 +33,7 @@ remote_theme: nikahmadz/central
   {% include 404.md %}
   ```
 
-## Publishing your website
+## Activating GitHub Pages
 
 1. Go to **GitHub Pages Settings** of your repository:
     `//github.com/<user-name>/<repo-name>/settings/pages`
