@@ -10,9 +10,9 @@ When you commit your code, **Github Pages** will build your website from the con
 **[View source][source]**
 {: .text-grey }
 
-[intro]:  https://nikahmadz.github.io/pages/ "Introduction to Pages"
-[how]:    https://nikahmadz.github.io/pages/docs/get-started "Find out how you can use this template to build websites"
-[source]: https://github.com/nikahmadz/pages "View source on Github"
+[intro]:  https://nikahmadz.github.io/central/ "Introduction to Pages"
+[how]:    https://nikahmadz.github.io/central/docs/get-started "Find out how you can use this template to build websites"
+[source]: https://github.com/nikahmadz/central "View source on Github"
 
 ***
 

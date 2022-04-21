@@ -5,5 +5,11 @@
 <meta name="theme-color"  content='{{ page.theme_color | default: site.theme_color | default: "#202020" }}' />
 <!--[if lt IE 9]><script src="//unpkg.com/html5shiv@3.7.3/dist/html5shiv.min.js"><![endif]-->
 {% seo %}
+{% if site.favicon %}
+<link rel="shortcut icon" type="image/x-icon" href="{{ '/' | append: site.favicon | absolute_url }}" />
+{% endif %}
+{% if site.manifest %}
+<link rel="manifest" href="{{ '/' | append: site.manifest | absolute_url }}" />
+{% endif %}
 {% include head-stylesheets.html %}
 {% include head-google-analytics.html %}
