@@ -1,5 +1,7 @@
 <link id="_style" rel="stylesheet" href='{{ site.github.url }}/assets/{{ page.theme | default: "base" }}/css/style.css?v={{ site.github.build_revision }}' />
-<!-- page.theme -->
-{% if page.theme=='base' or page.theme=='' %}
+<!-- {{ page.theme }} -->
+{% if page.theme %}{% if page.theme page.theme=='base' %}
+<script src='{{ site.github.url }}/assets/base/js/base-theme-v1.0.js?v={{ site.github.build_revision }}'></script>
+{% else %}
 <script src='{{ site.github.url }}/assets/base/js/base-theme-v1.0.js?v={{ site.github.build_revision }}'></script>
 {% endif %}
