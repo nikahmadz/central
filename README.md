@@ -16,24 +16,21 @@ When you commit your code to your repository, **GitHub Pages** will build your w
 ## Getting started
 
 Create these files on your repository.
-then, activate **[GitHub Pages][github-pages]** to publish your website.
+Then, activate **GitHub Pages** to publish your website.
 
-[github-pages]: https://docs.github.com/en/pages "GitHub Pages Documentation"
+- `_config.yml`
+```yml
+remote_theme: nikahmadz/central
+```
 
 - `index.md`
   ```markdown
-  ## {{ site.title }}
-  {{ site.description }}
+  {% include hero/1.html %}
   ```
 
 - `404.md`
   ```markdown
   {% include 404.md %}
-  ```
-
-- `_config.yml`
-  ```yml
-  remote_theme: nikahmadz/central
   ```
 
 ## Publishing your website
