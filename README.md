@@ -23,15 +23,12 @@ then, activate **[GitHub Pages][github-pages]** to publish your website.
 - `index.md`
   ```markdown
   ## {{ site.title }}
-
   {{ site.description }}
   ```
 
 - `404.md`
   ```markdown
-  ## Page not found
-
-  This address does not contain the requested page.
+  {% include 404.md %}
   ```
 
 - `_config.yml`
