@@ -49,28 +49,27 @@ Then, activate **GitHub Pages** to publish your website.
 You can write in Markdown and HTML using any code editor you like.
 Check out these articles to familiarize your self on the basics:
 - [Official documentation][] of GitHub Pages
-- Jekyll [front-matter][], [writing posts][], and [creating pages][].
 - [Basic writing and formatting syntax][basics].
+- Jekyll docs on [front-matter][], [writing posts][], and [creating pages][].
 
 [GitHub Pages]: https://pages.github.com/
 [Official documentation]: https://docs.github.com/en/pages "GitHub Pages Documentation"
+[basics]: https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 [jekyllrb.com]: https://jekyllrb.com/
 [front-matter]: https://jekyllrb.com/docs/frontmatter/ "Read more"
 [writing posts]: https://jekyllrb.com/docs/posts/
 [creating pages]: https://jekyllrb.com/docs/pages/
-[basics]: https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
-###### Example: `page.md`
+###### `example-page.md`
 ```markdown
 ---
-# front-matter
 title: "Page title"
 description: "Short description on the article."
 permalink: # (optional: permalink)
 layout: # layout-name
 theme: # theme-name
 ---
-<style>/* defining custom style for this page using html syntax */</style>
+<style>/* defining custom style using html syntax */</style>
 
 # Header 1
 ## Header 2
@@ -78,10 +77,6 @@ theme: # theme-name
 
 A paragraph using Markdown syntax.  
 **Bold** and _Italic_ and `Code` text
-
-\```
-Syntax highlighted code block
-\```
 
 > Blockquote
 
@@ -95,7 +90,7 @@ Syntax highlighted code block
 [Footnote][^ref]
 ![Image](src)
 
-
+{% include ready-made-blocks.html %}
 
 
 ```
