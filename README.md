@@ -7,6 +7,16 @@
 
 ***
 
+**Central** has everything configured to help you build websites on **GitHub** right away.
+You can write your content in Markdown and HTML using any code editor you like.
+When you commit your code to your repository, **Github Pages** will build your website from the content of your files.
+
+**[Get started][start]**
+
+[start]: https://nikahmadz.github.io/pages/docs/get-started "Find out how you can use Central to build websites"
+
+***
+
 ## Usage
 
 1. Open your `_config.yml` file (or create one).
@@ -31,8 +41,7 @@ remote_theme: nikahmadz/central
 
 ## Getting help
 
-> Having trouble with **GitHub Pages** ?  
-
+Having trouble with **GitHub Pages** ?  
 Check out the [official documentation](https://docs.github.com/en/pages),
 [discuss][] about it,
 or [contact support](https://support.github.com/contact) to sort it out.
