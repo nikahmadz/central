@@ -7,7 +7,7 @@
 
 ***
 
-**Central** has everything configured to help you build websites on **GitHub** easily.
+**Central** helps you build websites on **GitHub** easily.
 You can write your content using any code editor you like.
 When you commit your code to your repository, **GitHub Pages** will build your website from the content of your files.
 
