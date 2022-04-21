@@ -1,7 +1,7 @@
 &nbsp;
 
 <h1 align="center"><a href="https://nikahmadz.github.io/central">Central</a></h1>
-<p align="center">✨ Build website in minutes</p>
+<p align="center">Theme for GitHub Pages</p>
 
 &nbsp;
 
@@ -13,7 +13,7 @@ When you commit your code to your repository, **GitHub Pages** will build your w
 
 ***
 
-## Get started
+## Usage
 
 1. Open your `_config.yml` file (or create one).
 2. Remove existing values of `theme` and `remote_theme`.
