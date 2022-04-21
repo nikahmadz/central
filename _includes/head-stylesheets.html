@@ -2,6 +2,6 @@
 <!-- {{ page.theme }} -->
 {% if page.theme %}{% if page.theme page.theme=='base' %}
 <script src='{{ site.github.url }}/assets/base/js/base-theme-v1.0.js?v={{ site.github.build_revision }}'></script>
-{% else %}
+{% endif %}{% else %}
 <script src='{{ site.github.url }}/assets/base/js/base-theme-v1.0.js?v={{ site.github.build_revision }}'></script>
 {% endif %}
