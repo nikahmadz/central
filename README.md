@@ -15,7 +15,7 @@ When you commit your code to your repository, **GitHub Pages** will build your w
 
 ## Usage
 
-Create these files in your repository.
+Set these files in your repository.
 Then, activate **GitHub Pages** to publish your website.
 
 - `_config.yml`
