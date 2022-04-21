@@ -97,7 +97,8 @@ Write in **Bold** and _Italic_ and `Code` text.
 
 {% if page.matter %}add logics{% endif %}
 
-{% include ready-made-blocks.html %}
+include ready-made-blocks like:
+{% include edit.html %}
 
 
 ```
