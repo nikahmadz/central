@@ -26,8 +26,7 @@ body,
 
 .hero-1 {
 
-  @extend %container;
-  margin:12rem auto;margin:30vh auto;
+  padding:12rem 0;padding:30vh 0;
   text-align:center;
 
   .-title {
