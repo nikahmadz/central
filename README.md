@@ -43,14 +43,29 @@ Then, activate **GitHub Pages** to publish your website.
 - Your app will be accessible at `//<user-name>.github.io/<repo-name>`.
 
 
+## How it works
+
+**[GitHub Pages][]** uses [Jekyyll][jekyllrb.com] to build your website from the content of your files.
+Check out these articles to familiarize your self on the basics:
+- [Official documentation][] of GitHub Pages
+- Jekyll [front-matter][], [writing posts][], and [creating pages][].
+
+[GitHub Pages]: https://pages.github.com/
+[Official documentation]: https://docs.github.com/en/pages "GitHub Pages Documentation"
+[jekyllrb.com]: https://jekyllrb.com/
+[front-matter]: https://jekyllrb.com/docs/frontmatter/ "Read more"
+[writing posts]: https://jekyllrb.com/docs/posts/
+[creating pages]: https://jekyllrb.com/docs/pages/
+
+
 ## Getting help
 
 Having trouble with **GitHub Pages** ?  
 Lets [discuss][] about it,
-or [contact support](https://support.github.com/contact) to sort it out.
+or [contact support][] to sort it out.
 
 [discuss]: https://github.com/nikahmadz/central/discussions "Lets discuss about this project"
-
+[contact support]: https://support.github.com/contact
 
 ## Sponsor
 
