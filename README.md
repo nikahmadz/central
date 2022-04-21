@@ -9,16 +9,16 @@
 
 **Central** helps you build websites on **GitHub**.
 You can write your content in Markdown and HTML using any code editor you like.
-When you commit your code to your repository, **[GitHub Pages][github-pages]** will build your website from the content of your files.
-
-[github-pages]: https://docs.github.com/en/pages "GitHub Pages Documentation"
+When you commit your code to your repository, **GitHub Pages** will build your website from the content of your files.
 
 ***
 
 ## Getting started
 
 Create these files on your repository.
-then, activate **GitHub Pages** to publish your website.
+then, activate **[GitHub Pages][github-pages]** to publish your website.
+
+[github-pages]: https://docs.github.com/en/pages "GitHub Pages Documentation"
 
 - `index.md`
   ```markdown
