@@ -1,5 +1,6 @@
 ---
 title: "Site's variables"
+permalink: vars
 theme: base
 ---
 <style>.markdown-body .highlight pre{max-height:400px}</style>

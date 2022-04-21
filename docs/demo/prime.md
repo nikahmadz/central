@@ -1,6 +1,6 @@
 ---
-title: Demo of Default Theme
-theme: # theme-name
+title: Demo of Prime Theme
+theme: prime
 ---
 > **{{ page.title }}**
 

@@ -1,6 +1,6 @@
 ---
 title: "Test Page"
-
+permalink: test
 categories:
 ---
 

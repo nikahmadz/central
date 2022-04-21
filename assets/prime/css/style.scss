@@ -1,0 +1,105 @@
+---
+---
+/*! (c) Copyright Nik Ahmad : prime v0.1 */
+@import "primer-support/index.scss";
+@import "primer-base/index.scss";
+@import "primer-utilities/index.scss";
+@import "primer-layout/index.scss";
+@import "primer-markdown/index.scss";
+@import "rouge-base16-dark";
+@import "base-scroll";
+@import "utilities";
+
+$primary-color:#4660e1;
+$border-color:grey;
+$border-color-alpha:rgba(grey,40%);
+$bg-color:rgba(175,175,175,50%);
+
+body { background-color:initial;color:initial; }
+a { color:$primary-color; }
+summary {
+  cursor:pointer;
+  margin-bottom:1em;
+  padding:.2em .4em;
+  border-radius:4px;
+  &:hover{ background-color:$bg-color; }
+}
+
+.footnotes {
+  font-size:.87em;
+  margin:24px 0;
+  border-top:4px solid $border-color;border-top-color:$border-color-alpha;
+}
+
+.markdown-body {
+
+  h1,h2,h3,h4,h5,h6 { font-weight:600;margin:1.3em 0 1rem 0;line-height:1; }
+  h1 {
+    font-size:2em;
+    color:slategrey;
+    a { color:inherit; &:hover{ text-decoration:none;color:$primary-color; } }
+  }
+  h1,
+  h2 {
+    border-bottom:2px solid $border-color;border-bottom-color:$border-color-alpha;
+    padding-bottom:.3em;
+  }
+  header h1 { font-size:1.2em;margin-top:0; }
+
+  hr { background-color:$border-color;background-color:$border-color-alpha; }
+
+  h1 { font-size:1.4em;margin-top:0;color:slategrey;border-bottom-width:2px; }
+  h1 a { color:inherit; &:hover{ text-decoration:none;color:$primary-color; } }
+
+  img { box-shadow:0 1px 3px 1px rgba(black,50%), 0 0 0 1px rgba(black,50%); }
+
+  table {
+    tr, th, td { border-color:$border-color;border-color:$border-color-alpha; }
+    tr { background-color:initial;background-color:rgba(grey,10%); }
+    thead tr,
+    tr:nth-child(2n) { background-color:initial;background-color:rgba(grey,20%); }
+  }
+
+  .highlight {
+    background-color:#202020;
+    box-shadow:0 2px 4px 2px rgba(black,50%) inset, 0 0 0 1px rgba(black,50%) inset;
+    color:#6a9fb5;
+    &,& pre { border-radius:6px }
+  }
+
+  pre {
+    background-color:initial;
+    border:1px solid $border-color;border-color:$border-color-alpha;
+  }
+  .highlight pre { background-color:initial;border:0; }
+
+  blockquote { color:slategray;border-left-color:slategray;border-left-color:rgba(slategray,50%); }
+
+  dt { color:#6a737d }
+
+  code, tt { background-color:initial;background-color:$bg-color; }
+  pre { code, tt { background:transparent } }
+
+}
+
+// extra
+
+.p { margin-bottom:16px }
+.box { padding:.5em;border-radius:6px; }
+
+.text-secondary { color:unset !important }
+.bg-secondary {
+  background-color:rgba(slategrey,25%);
+  border:1px solid grey;
+  border-color:rgba(grey,0.25);
+}
+
+.text-primary { color:$primary-color !important }
+.bg-primary { background-color:$primary-color }
+
+.hero {
+  font-size:2.5em;
+  font-weight:700;
+  letter-spacing:-1px;
+  line-height:1.2;
+}
