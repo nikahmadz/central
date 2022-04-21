@@ -60,7 +60,9 @@ Check out these articles to familiarize your self on the basics:
 [writing posts]: https://jekyllrb.com/docs/posts/
 [creating pages]: https://jekyllrb.com/docs/pages/
 
-###### `example-page.md`
+
+> `example-page.md`
+
 ```markdown
 ---
 title: "Page title"
@@ -69,14 +71,17 @@ permalink: # (optional: permalink)
 layout: # layout-name
 theme: # theme-name
 ---
-<style>/* defining custom style using html syntax */</style>
+<style>/* define custom style using html syntax */</style>
 
 # Header 1
 ## Header 2
 ### Header 3
 
-A paragraph using Markdown syntax.  
-**Bold** and _Italic_ and `Code` text
+Write paragraph using Markdown syntax.  
+Write in **Bold** and _Italic_ and `Code` text.
+{: .use-built-in-style }
+
+<div class="use-built-in-classes">with HTML syntax</div>
 
 > Blockquote
 
@@ -89,6 +94,8 @@ A paragraph using Markdown syntax.
 [Link](url)
 [Footnote][^ref]
 ![Image](src)
+
+{% if page.matter %}add logics{% endif %}
 
 {% include ready-made-blocks.html %}
 
