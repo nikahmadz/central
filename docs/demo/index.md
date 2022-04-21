@@ -1,5 +1,5 @@
 ---
-title: Default Demo
+title: Default Theme Demo
 theme: # theme-name
 ---
 > **{{ page.title }}**
