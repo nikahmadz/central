@@ -1,1 +1,4 @@
 <link id="_style" rel="stylesheet" href='{{ site.github.url }}/assets/{{ page.theme | default: "central" }}/css/style.css?v={{ site.github.build_revision }}' />
+{% if page.theme=='base' %}
+<script src='{{ site.github.url }}/assets/base/js/base-theme-v1.0.js?v={{ site.github.build_revision }}'></script>
+{% endif %}
