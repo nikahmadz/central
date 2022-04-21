@@ -19,6 +19,7 @@ Create these files on your repository:
 - `index.md`
   ```markdown
   ## {{ site.title }}
+
   {{ site.description }}
   ```
 
