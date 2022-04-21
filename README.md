@@ -13,16 +13,28 @@ When you commit your code to your repository, **GitHub Pages** will build your w
 
 ***
 
-## Usage
+## Get started
 
-1. Open your `_config.yml` file (or create one).
-2. Remove existing values of `theme` and `remote_theme`.
-3. Then set the following value.
+Create these files on your repository:
+- `index.md`
+  ```markdown
+  ## {{ site.title }}
+  {{ site.description }}
+  ```
 
-```yml
-remote_theme: nikahmadz/central
-```
-- Activate **GitHub Pages** to publish your website.
+- `404.md`
+  ```markdown
+  ## Page not found
+
+  This address does not contain the requested page.
+  ```
+
+- `_config.yml`
+  ```yml
+  remote_theme: nikahmadz/central
+  ```
+
+Then, activate **GitHub Pages** to publish your website.
 
 
 ## Publishing your website
@@ -30,7 +42,7 @@ remote_theme: nikahmadz/central
 1. Go to **GitHub Pages Settings** of your repository:
     `//github.com/<user-name>/<repo-name>/settings/pages`
 2. Scroll down to the **Source** section.
-3. Choose the source of your website and hit **Save**.  eg: `main/(root)`
+3. Choose the source of your website files and hit **Save**.  eg: `main/(root)`
 
 - Your app will be accessible at `//<user-name>.github.io/<repo-name>`.
 
