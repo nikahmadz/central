@@ -1,4 +1,1 @@
-{% liquid
-if site.github.private != true and site.github.license
-  github_edit_link "Improve this page"
-endif %}
+{% if site.github.private != true and site.github.license %}{{ github_edit_link "Improve this page" }}{% endif %}

@@ -3,6 +3,7 @@
 ```yml
 layout: {{ layout }}
 use_base_theme: {{ use_base_theme }}
+github_edit_link: {{ github_edit_link }}
 
 ```
 
