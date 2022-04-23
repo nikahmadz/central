@@ -1,8 +1,6 @@
 <style> .markdown-body .highlight pre{max-height:400px} </style>
 
 ```yml
-layout: {{ layout }}
-use_base_theme: {{ use_base_theme }}
 github_edit_link: {{ github_edit_link "Edit this page" }}
 
 ```
@@ -25,6 +23,10 @@ cloudflare_analytics: {{ site.cloudflare_analytics }}
 google_analytics: {{ site.google_analytics }}
 header: {{ site.header }}
 
+```
+```yml
+{% for v in site -%}
+{{ v[0] }}{% endfor %}
 ```
 
 ###### site.github
@@ -123,8 +125,44 @@ author:
 {% for v in page %}{% if v[0]!='content' -%}
 {{ v[0] }}: {{ v[1] }}
 {% endif %}{% endfor %}
+author:
 # content-size: {{ page.content.size | default:0 }}
-# tags:
-# author:
 
+```
+
+###### site.posts
+
+```yml
+{% for v in site.posts -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}
+# content-size: {{ page.content.size | default:0 }}
+# excerpt-size: {{ page.excerpt.size | default:0 }}
+# published: false # if you don't want to generate the post
+# tags
+
+```
+
+###### site.pages
+
+```yml
+{% for v in site.pages -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}
+```
+
+###### site.tags
+
+```yml
+{% for v in site.tags -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}
+```
+
+###### site.categories
+
+```yml
+{% for v in site.categories -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}
 ```
