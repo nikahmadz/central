@@ -63,11 +63,12 @@ a.reversefootnote:hover { text-decoration:none; }
 }
 
 #_credit {
+  font-size:12px;
   position:absolute;position:fixed;
-  bottom:0;right:6px;left:auto;top:auto;
+  bottom:6px;right:6px;left:auto;top:auto;
   padding:.3rem .5rem;
-  box-shadow:-1px -1px 4px 1px #0007;
-  border-radius:5px 5px 0 0;
+  box-shadow:0 0 4px #0007;
+  border-radius:5px;
 }
 
 .hero-1 {
