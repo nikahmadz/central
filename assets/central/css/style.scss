@@ -27,10 +27,7 @@ pre.highlight {
   h2,h3,h4,h5,h6 { margin-top:2em }
 }
 #_credit { background:#fff }
-
-@media (prefers-color-scheme: dark) {
-  #_credit { background:#000 }
-}
+._dark { #_credit { background:#000 }}
 
 .footnotes {
   font-size:.87em;

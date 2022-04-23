@@ -84,10 +84,7 @@ summary {
 
 #_layout { max-width:1080px;margin:0 auto 2.5rem auto;padding:0 1rem; }
 #_credit { background:#fff }
-
-@media (prefers-color-scheme: dark) {
-  #_credit { background:#000 }
-}
+._dark { #_credit { background:#000 }}
 
 // extra
 
