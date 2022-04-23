@@ -111,11 +111,10 @@ author:
 {% endfor %}
 ```
 
-{% if site.posts %}
 ###### site.posts
 
 ```yml
-{{ site.posts }}
+size: {{ site.posts.size | default:0 }}
 
 # content:
 # excerpt:
@@ -123,16 +122,21 @@ author:
 # tags
 
 ```
-{% endif %}
 
-{% if site.pages %}
 ###### site.pages
-{% endif %}
 
-{% if site.tags %}
+```yml
+size: {{ site.pages.size | default:0 }}
+```
+
 ###### site.tags
-{% endif %}
 
-{% if site.categories %}
+```yml
+size: {{ site.tags.size | default:0 }}
+```
+
 ###### site.categories
-{% endif %}
+
+```yml
+size: {{ site.categories.size | default:0 }}
+```
