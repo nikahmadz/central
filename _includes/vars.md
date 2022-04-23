@@ -113,6 +113,16 @@ author:
 
 {% if site.posts %}
 ###### site.posts
+
+```yml
+{{ site.posts }}
+
+# content:
+# excerpt:
+# published: false # if you don't want to generate the post
+# tags
+
+```
 {% endif %}
 
 {% if site.pages %}
