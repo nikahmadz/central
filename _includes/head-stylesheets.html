@@ -1,11 +1,9 @@
 {%- if page.theme=="primer" -%}
-{%- assign site.color_scheme = "light" -%}
+  {%- assign site.color_scheme = "light" -%}
 {%- else -%}
-{%- assign use_base_theme = true -%}
+  {%- assign use_base_theme = true -%}
 {%- endif -%}
-<meta name="color-scheme" content='{{ page.color_scheme | default: site.color_scheme | default: "light dark" }}' id="_color-scheme" />
-<meta name="theme-color"  content='{{ page.theme_color | default: site.theme_color | default: "#202020" }}' />
+<meta name="color-scheme" content='{{ site.color_scheme | default: "light dark" }}' id="_color-scheme" />
+<meta name="theme-color"  content='{{ site.theme_color | default: "#202020" }}' />
 <link id="_style" rel="stylesheet" href='{{ site.baseurl }}/assets/{{ page.theme | default: "base" }}/css/style.css?v={{ site.github.build_revision }}' />
-{% if use_base_theme -%}
-<script src='{{ site.baseurl }}/assets/base/js/base-theme-v1.0.js?v={{ site.github.build_revision }}'></script>
-{%- endif %}
+{% if use_base_theme %}<script src='{{ site.baseurl }}/assets/base/js/base-theme-v1.0.js?v={{ site.github.build_revision }}'></script>{% endif %}
