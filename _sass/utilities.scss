@@ -64,10 +64,10 @@ a.reversefootnote:hover { text-decoration:none; }
 
 #_credit {
   position:absolute;position:fixed;
-  bottom:0;right:0;left:auto;top:auto;
+  bottom:0;right:5px;left:auto;top:auto;
   padding:.3rem .5rem;
   box-shadow:-1px -1px 4px 1px #0007;
-  border-radius:5px 0 0 0;
+  border-radius:5px 0 5px 0;
 }
 
 .hero-1 {
