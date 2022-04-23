@@ -1,6 +1,7 @@
 {%- if page.theme=="primer" -%}
-{%- assign use_base_theme = true -%}
 {%- assign site.color_scheme = "light" -%}
+{%- else -%}
+{%- assign use_base_theme = true -%}
 {%- endif -%}
 <meta name="color-scheme" content='{{ page.color_scheme | default: site.color_scheme | default: "light dark" }}' id="_color-scheme" />
 <meta name="theme-color"  content='{{ page.theme_color | default: site.theme_color | default: "#202020" }}' />
