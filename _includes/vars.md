@@ -1,5 +1,13 @@
 <style> .markdown-body .highlight pre{max-height:400px} </style>
 
+###### layout
+
+```yml
+{% for v in layout -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}
+```
+
 ###### site
 
 ```yml
@@ -103,60 +111,18 @@ author:
 {% endfor %}
 ```
 
-###### layout
-
-```yml
-{% for v in layout -%}
-{{ v[0] }}: {{ v[1] }}
-{% endfor %}
-```
-
 {% if site.posts %}
 ###### site.posts
-
-```yml
-{% for v in site.posts -%}
-{{ v[0] }}: {{ v[1] }}
-{% endfor %}
-# content:
-# excerpt:
-# published: false # if you don't want to generate the post
-# tags
-
-```
 {% endif %}
 
 {% if site.pages %}
 ###### site.pages
-
-```yml
-{% for v in site.pages -%}
-{{ v[0] }}: {{ v[1] }}
-{% endfor %}
-# content:
-# excerpt:
-# published: false # if you don't want to generate the post
-# tags
-
-```
 {% endif %}
 
 {% if site.tags %}
 ###### site.tags
-
-```yml
-{% for v in site.tags -%}
-{{ v[0] }}: {{ v[1] }}
-{% endfor %}
-```
 {% endif %}
 
 {% if site.categories %}
 ###### site.categories
-
-```yml
-{% for v in site.categories -%}
-{{ v[0] }}: {{ v[1] }}
-{% endfor %}
-```
 {% endif %}
