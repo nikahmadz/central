@@ -60,10 +60,6 @@ wiki_url: {{ site.github.wiki_url }}
 tar_url: {{ site.github.tar_url }}
 zip_url: {{ site.github.zip_url }}
 
-{% for v in site.github -%}
-{%- if v[0]!='license' and v[0]!='owner' and v[0]!='latest_release' and v[0]!='versions' and v[0]!='sass' -%}
-{{ v[0] }}: {{ v[1] }}
-{% endif %}{% endfor %}
 ```
 
 ###### site.github.license
