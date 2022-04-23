@@ -22,7 +22,8 @@ a {
 }
 
 #_layout { max-width:1080px;margin:auto;padding:0 1rem; }
-#_credit { background:#fff }
+#_main { height:100%;overflow:auto}
+#_credit { background:#fff;right:16px }
 ._dark { #_credit { background:#000 }}
 
 .footnotes {
