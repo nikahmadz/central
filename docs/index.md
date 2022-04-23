@@ -1,6 +1,7 @@
 <style>
-.hero-1 { padding:5rem 0; background-image: url(https://picsum.photos/id/53/1080/368); }
+.hero-1 { padding:5rem 0;margin:1rem 0;background: center no-repeat url(https://picsum.photos/id/53/1080/368);text-shadow: 0 0 3px black; }
 .hero-1 .-title { font:500 5rem serif }
+.hero-1 .-desc { color:initial }
 </style>
 {% include hero/1.html %}
 
@@ -13,7 +14,7 @@ When you commit your code to your repository, **GitHub Pages** will build your w
 [Get started][start]{: ._bt.-l.-blue }
 [View on Github][source]{: ._bt.-l.-flat }
 
-[start]:  https://github.com/nikahmadz/central#readme "Find out how you can use this template to build websites"
+[start]:  https://github.com/nikahmadz/central#get-started "Find out how you can use this template to build websites"
 [source]: https://github.com/nikahmadz/central "View source on Github"
 
 ***
