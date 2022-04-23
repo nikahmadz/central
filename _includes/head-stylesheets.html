@@ -1,4 +1,4 @@
-<link id="_style" rel="stylesheet" href='{{ site.github.url }}/assets/{{ page.theme | default: "base" }}/css/style.css?v={{ site.github.build_revision }}' />
+<link id="_style" rel="stylesheet" href='{{ site.baseurl }}/assets/{{ page.theme | default: "base" }}/css/style.css?v={{ site.github.build_revision }}' />
 {% if use_base_theme -%}
-<script src='{{ site.github.url }}/assets/base/js/base-theme-v1.0.js?v={{ site.github.build_revision }}'></script>
+<script src='{{ site.baseurl }}/assets/base/js/base-theme-v1.0.js?v={{ site.github.build_revision }}'></script>
 {%- endif %}

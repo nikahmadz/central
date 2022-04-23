@@ -192,8 +192,8 @@ Add full scale images, align them centered or float them left or right.
 {% if site.posts.size > 0 %}
 
 You can create links to
-[a post](../first-post "First Post"),
-[a page](../pages/example "Page Example"),
+[a post]({{ site.baseurl }}/first-post "First Post"),
+[a page]({{ site.baseurl }}/pages/example "Page Example"),
 or make a list of all the posts you have:
 
 <ul>{% for post in site.posts -%}
