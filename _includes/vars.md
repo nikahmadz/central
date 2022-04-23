@@ -110,3 +110,40 @@ author:
 {{ v[0] }}: {{ v[1] }}
 {% endfor %}
 ```
+
+###### site.posts
+
+```yml
+{% for v in site.posts -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}
+# content:
+# excerpt:
+# published: false # if you don't want to generate the post
+# tags
+
+```
+
+###### site.pages
+
+```yml
+{% for v in site.pages -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}
+```
+
+###### site.tags
+
+```yml
+{% for v in site.tags -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}
+```
+
+###### site.categories
+
+```yml
+{% for v in site.categories -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}
+```
