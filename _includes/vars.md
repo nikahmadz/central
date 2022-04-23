@@ -111,6 +111,7 @@ author:
 {% endfor %}
 ```
 
+{% if site.posts %}
 ###### site.posts
 
 ```yml
@@ -123,7 +124,24 @@ author:
 # tags
 
 ```
+{% endif %}
 
+{% if site.pages %}
+###### site.pages
+
+```yml
+{% for v in site.pages -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}
+# content:
+# excerpt:
+# published: false # if you don't want to generate the post
+# tags
+
+```
+{% endif %}
+
+{% if site.tags %}
 ###### site.tags
 
 ```yml
@@ -131,7 +149,9 @@ author:
 {{ v[0] }}: {{ v[1] }}
 {% endfor %}
 ```
+{% endif %}
 
+{% if site.categories %}
 ###### site.categories
 
 ```yml
@@ -139,3 +159,4 @@ author:
 {{ v[0] }}: {{ v[1] }}
 {% endfor %}
 ```
+{% endif %}
