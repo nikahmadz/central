@@ -1,5 +1,5 @@
 <style>
-.hero-1 { padding:5rem 0;margin:1rem 0;background: center no-repeat url(https://picsum.photos/id/53/1080/368);text-shadow: 0 0 3px black; }
+.hero-1 { padding:5rem 0;margin:1rem 0;background: #4660e1 center no-repeat url(https://picsum.photos/id/53/1080/368);text-shadow: 0 0 3px #888; }
 .hero-1 .-title { font:500 5rem serif }
 .hero-1 .-desc { color:initial }
 </style>

@@ -12,6 +12,6 @@ excerpt:
 
 tags: {{ page.tags }}
 
-# published: false # if you don't want to generate the post
+published: # false # if you don't want to generate the post
 
 ```
