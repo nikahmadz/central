@@ -1,5 +1,5 @@
 <style>
-.hero-1 { padding:5rem 0 }
+.hero-1 { padding:5rem 0; background-image: url(https://picsum.photos/id/53/1080/368); }
 .hero-1 .-title { font:500 5rem serif }
 </style>
 {% include hero/1.html %}
