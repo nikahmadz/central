@@ -3,7 +3,7 @@
 ```yml
 layout: {{ layout }}
 use_base_theme: {{ use_base_theme }}
-github_edit_link: {{ github_edit_link }}
+github_edit_link: {{ github_edit_link "Edit this page" }}
 
 ```
 
@@ -66,52 +66,63 @@ zip_url: {{ site.github.zip_url }}
 ###### site.github.license
 
 ```yml
-{% for v in site.github.license %}{{ v[0] }}: {{ v[1] }}
+{% for v in site.github.license -%}
+{{ v[0] }}: {{ v[1] }}
 {% endfor %}
 ```
 
 ###### site.github.owner
 
 ```yml
-{% for v in site.github.owner %}{{ v[0] }}: {{ v[1] }}{% endfor %}
+{% for v in site.github.owner -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}
 ```
 
 ###### site.github.latest_release
 
 {% if site.github.latest_release %}
 ```yml
-{% for v in site.github.latest_release -%}
-  {%- if v[0]!='author' %}{{ v[0] }}: {{ v[1] }}{% endif -%}
-{%- endfor %}
+{% for v in site.github.latest_release %}{% if v[0]!='author' -%}
+{{ v[0] }}: {{ v[1] }}
+{% endif %}{% endfor %}
 author:
-  {% for v in site.github.latest_release.author %}{{ v[0] }}: {{ v[1] }}{% endfor %}
+  {% for v in site.github.latest_release.author -%}
+  {{ v[0] }}: {{ v[1] }}
+  {% endfor %}
 ```
 {% endif %}
 
 ###### site.github.versions
 
 ```yml
-{% for v in site.github.versions %}{{ v[0] }}: {{ v[1] }}{% endfor %}
+{% for v in site.github.versions -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}
 ```
 
 ###### site.sass
 
 ```yml
-{% for v in site.sass %}{{ v[0] }}: {{ v[1] }}{% endfor %}
+{% for v in site.sass -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}
 ```
 
 ###### layout
 
 ```yml
-{% for v in layout %}{{ v[0] }}: {{ v[1] }}{% endfor %}
+{% for v in layout -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}
 ```
 
 ###### page
 
 ```yml
-{% for v in page -%}
-{%- if v[0]!='content' %}{{ v[0] }}: {{ v[1] }}{% endif -%}
-{%- endfor %}
+{% for v in page %}{% if v[0]!='content' -%}
+{{ v[0] }}: {{ v[1] }}
+{% endif %}{% endfor %}
 # content-size: {{ page.content.size | default:0 }}
 # tags:
 # author:
