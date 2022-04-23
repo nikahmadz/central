@@ -124,10 +124,18 @@ author:
 
 ```
 
-###### site.pages
+###### site.tags
 
 ```yml
-{% for v in site.pages -%}
+{% for v in site.tags -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}
+```
+
+###### site.categories
+
+```yml
+{% for v in site.categories -%}
 {{ v[0] }}: {{ v[1] }}
 {% endfor %}
 ```
