@@ -196,11 +196,9 @@ You can create links to
 [a page](../pages/example "Page Example"),
 or make a list of all the posts you have:
 
-<ul>
-  {% for post in site.posts %}
-    <li><a href="..{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+<ul>{% for post in site.posts -%}
+<li><a href="..{{ post.url }}">{{ post.title }}</a></li>
+{%- endfor %}</ul>
 
 {% else %}
 
@@ -211,7 +209,7 @@ You can create links to
 
 If you link to a missing page, you'll see [an error](../404 "Page not found").
 
-{% if page.theme=='base' %}
+{% if use_base_theme %}
 ## Theme control
 
 Some layout allows user to switch between ***light*** and ***dark*** theme.

@@ -1,6 +1,9 @@
 ---
 name: default
 ---
+{%- liquid
+  assign use_base_theme = (page.theme==nil or page.theme=='' or page.theme=='base' or page.theme=='prime')
+-%}
 <!doctype html>
 <html lang='{{ page.lang | default: site.lang | default: "en-US" }}' data-layout="{{ layout.name }}">
 <head>{% include head.html %}</head>
