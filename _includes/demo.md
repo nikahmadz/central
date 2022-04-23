@@ -190,7 +190,7 @@ Add full scale images, align them centered or float them left or right.
 ## Links
 
 You can create links to
-[a page]({{ site.baseurl }}pages/example "Page Example").
+[a page]({{ site.baseurl }}/pages/example "Page Example").
 
 {% if site.posts.size > 0 %}
 
