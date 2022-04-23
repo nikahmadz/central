@@ -204,7 +204,7 @@ Make a list of all the posts you have:
 
 If you link to a missing page, you'll see [an error](../404 "Page not found").
 
-{% if use_base_theme %}
+{% if page.theme!='primer' %}
 ## Theme control
 
 Some layout allows user to switch between ***light*** and ***dark*** theme.

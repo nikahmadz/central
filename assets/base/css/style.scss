@@ -24,7 +24,7 @@ a {
 #_layout { max-width:1080px;margin:auto;padding:0 1rem; }
 #_credit { background:#fff }
 
-@media (prefers-color-scheme: dark) {
+._dark {
   #_credit { background:#000 }
 }
 

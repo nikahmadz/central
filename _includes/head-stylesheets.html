@@ -1,4 +1,4 @@
 <link id="_style" rel="stylesheet" href='{{ site.baseurl }}/assets/{{ page.theme | default: "base" }}/css/style.css?v={{ site.github.build_revision }}' />
-{% if use_base_theme -%}
+{% if page.theme!='primer' -%}
 <script src='{{ site.baseurl }}/assets/base/js/base-theme-v1.0.js?v={{ site.github.build_revision }}'></script>
 {%- endif %}

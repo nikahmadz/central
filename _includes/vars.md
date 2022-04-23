@@ -21,12 +21,6 @@ header: {{ site.header }}
 
 ```
 
-```yml
-{% for v in site -%}
-{{ v[0] }}
-{% endfor %}
-```
-
 ###### site.github
 
 ```yml
