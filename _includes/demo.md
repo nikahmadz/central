@@ -189,21 +189,16 @@ Add full scale images, align them centered or float them left or right.
 
 ## Links
 
+You can create links to
+[a page]({{ site.baseurl }}pages/example "Page Example").
+
 {% if site.posts.size > 0 %}
 
-You can create links to
-[a post]({{ site.baseurl }}/first-post "First Post"),
-[a page]({{ site.baseurl }}/pages/example "Page Example"),
-or make a list of all the posts you have:
+Make a list of all the posts you have:
 
 <ul>{% for post in site.posts -%}
 <li><a href="..{{ post.url }}">{{ post.title }}</a></li>
 {%- endfor %}</ul>
-
-{% else %}
-
-You can create links to
-[a page](../pages/example "Page Example").
 
 {% endif %}
 
