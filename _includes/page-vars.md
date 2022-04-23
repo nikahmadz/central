@@ -7,4 +7,11 @@
 content:
   size: {{ page.content.size | default:0 }}
 
+excerpt:
+  size: {{ page.excerpt.size | default:0 }}
+
+tags: {{ page.tags }}
+
+# published: false # if you don't want to generate the post
+
 ```

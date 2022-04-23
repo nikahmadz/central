@@ -115,12 +115,6 @@ author:
 
 ```yml
 size: {{ site.posts.size | default:0 }}
-
-# content:
-# excerpt:
-# published: false # if you don't want to generate the post
-# tags
-
 ```
 
 ###### site.pages
