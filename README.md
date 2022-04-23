@@ -46,19 +46,21 @@ Then, activate **GitHub Pages** to publish your website.
 ## Writing content
 
 **[GitHub Pages][]** uses [Jekyyll][jekyllrb.com] to build your website from the content of your files.
-You can write in Markdown and HTML using any code editor you like.
+You can write in HTML, Markdown and Liquid using any code editor you like.
 Check out these articles to familiarize your self on the basics:
-- [Official documentation][] of GitHub Pages
-- [Basic writing and formatting syntax][basics].
+- [GitHub Pages documentation][]
+- [Markdown syntax][].
 - Jekyll docs on [front-matter][], [writing posts][], and [creating pages][].
+- [Liquid syntax][]
 
 [GitHub Pages]: https://pages.github.com/
-[Official documentation]: https://docs.github.com/en/pages "GitHub Pages Documentation"
-[basics]: https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+[GitHub Pages documentation]: https://docs.github.com/en/pages
+[Markdown syntax]: https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 [jekyllrb.com]: https://jekyllrb.com/
-[front-matter]: https://jekyllrb.com/docs/frontmatter/ "Read more"
+[front-matter]: https://jekyllrb.com/docs/frontmatter/
 [writing posts]: https://jekyllrb.com/docs/posts/
 [creating pages]: https://jekyllrb.com/docs/pages/
+[Liquid syntax]: https://shopify.github.io/liquid/
 
 
 > `example-page.md`

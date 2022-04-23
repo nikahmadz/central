@@ -1,10 +1,7 @@
 <link id="_style" rel="stylesheet" href='{{ site.github.url }}/assets/{{ page.theme | default: "base" }}/css/style.css?v={{ site.github.build_revision }}' />
+{% if page.theme==nil or page.theme in ['base','prime'] -%}
 <!-- {{ page.theme }} -->
-<!-- {%= page.theme=='' %} -->
-<!-- {%= page.theme==undefined %} -->
-<!-- {%= page.theme==null %} -->
-{% if page.theme %}{% if page.theme=='base' %}
-<script src='{{ site.github.url }}/assets/base/js/base-theme-v1.0.js?v={{ site.github.build_revision }}'></script>
-{% endif %}{% else %}
+{%- endif %}
+{% if page.theme=='base' or page.theme=='prime' or page.theme==nil -%}
 <script src='{{ site.github.url }}/assets/base/js/base-theme-v1.0.js?v={{ site.github.build_revision }}'></script>
 {% endif %}

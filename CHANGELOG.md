@@ -3,7 +3,7 @@
 # Change log
 
 ## v.1.3
-- update central theme
+- update central theme, add other themes
 
 ## v0.1.2
 - update central theme, add utilities, rouge and housekeep
