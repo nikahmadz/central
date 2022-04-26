@@ -1,5 +1,5 @@
 ---
-title: Demo of Prime Theme
+title: Prime Theme Demo
 theme: prime
 ---
 > **{{ page.title }}**
