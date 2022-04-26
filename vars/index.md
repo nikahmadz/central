@@ -1,6 +1,5 @@
 ---
 title: "Site's variables"
-permalink: vars
 theme: base
 ---
 ## {{ page.title }}
