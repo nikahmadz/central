@@ -19,9 +19,9 @@ When you commit to your repository, **GitHub Pages** will build your website fro
 **[Prime](//nikahmadz.github.io/central/demo/prime)**
 **[Primer](//nikahmadz.github.io/central/demo/primer)**
 
-## Usage
+## Getting started
 
-Set these files in your repository.
+Setup these files in your repository.
 Then, [activate **GitHub Pages**](#activating-github-pages) to publish your website.
 
 - `_config.yml`
@@ -51,7 +51,7 @@ Then, [activate **GitHub Pages**](#activating-github-pages) to publish your webs
 
 ## Writing content
 
-**[GitHub Pages][]** uses [Jekyyll][jekyllrb.com] to build your website from the content of your repository.
+**[GitHub Pages][]** uses [Jekyyll][jekyllrb.com] to build your website from the content of your repository files.
 You can write your content in Markdown, HTML and Liquid using any code editor you like.
 Check out these articles to familiarize your self on the basics :
 
