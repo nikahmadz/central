@@ -19,7 +19,7 @@ When you commit your code to your repository, **GitHub Pages** will build your w
 
 ***
 
-## Demo pages
+## Demo
 
 **[Base](//nikahmadz.github.io/central/demo/base)**
 **[Prime](//nikahmadz.github.io/central/demo/prime)**

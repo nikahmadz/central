@@ -7,16 +7,21 @@
 
 ***
 
-**Central** helps you build websites on **GitHub**.
-You can write your content using any code editor you like.
-When you commit your code to your repository, **GitHub Pages** will build your website from the content of your files.
+**Central** helps you build websites from the content of your **GitHub** repository.
+You can write your content in Markdown, HTML and Liquid using any code editor you like.
 
 ***
+
+## Demo
+
+**[Base](//nikahmadz.github.io/central/demo/base)**
+**[Prime](//nikahmadz.github.io/central/demo/prime)**
+**[Primer](//nikahmadz.github.io/central/demo/primer)**
 
 ## Usage
 
 Set these files in your repository.
-Then, activate **GitHub Pages** to publish your website.
+Then, [activate **GitHub Pages**](#activating-github-pages) to publish your website.
 
 - `_config.yml`
   ```yml
@@ -45,9 +50,10 @@ Then, activate **GitHub Pages** to publish your website.
 
 ## Writing content
 
-**[GitHub Pages][]** uses [Jekyyll][jekyllrb.com] to build your website from the content of your files.
-You can write in HTML, Markdown and Liquid using any code editor you like.
-Check out these articles to familiarize your self on the basics:
+**[GitHub Pages][]** uses [Jekyyll][jekyllrb.com] to build your website from the content of your repository.
+You can write your content in Markdown, HTML and Liquid using any code editor you like.
+Check out these articles to familiarize your self on the basics :
+
 - [GitHub Pages documentation][]
 - [Markdown syntax][].
 - Jekyll docs on [front-matter][], [writing posts][], and [creating pages][].
