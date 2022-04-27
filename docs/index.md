@@ -8,8 +8,8 @@
 ***
 
 **Central** helps you build websites on **GitHub**.
-You can write your content using any code editor you like.
-When you commit your code to your repository, **GitHub Pages** will build your website from the content of your files.
+You can write your content in Markdown, HTML and Liquid using any code editor you like.
+When you commit to your repository, **GitHub Pages** will build your website from the content of your repository files.
 
 [Get started][start]{: ._bt.-l.-blue }
 [View on Github][source]{: ._bt.-l.-flat }

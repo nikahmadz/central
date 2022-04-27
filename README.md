@@ -7,8 +7,9 @@
 
 ***
 
-**Central** helps you build websites from the content of your **GitHub** repository.
+**Central** helps you build websites on **GitHub**.
 You can write your content in Markdown, HTML and Liquid using any code editor you like.
+When you commit to your repository, **GitHub Pages** will build your website from the content of your repository files.
 
 ***
 
@@ -87,9 +88,11 @@ theme: # theme-name
 
 Write paragraph using Markdown syntax.  
 Write in **Bold** and _Italic_ and `Code` text.
-{: .use-built-in-style }
 
-<div class="use-built-in-classes">with HTML syntax</div>
+Apply custom styles using Liquid
+{: .with-classes }
+
+<div class="use-built-in-classes">With HTML syntax</div>
 
 > Blockquote
 
