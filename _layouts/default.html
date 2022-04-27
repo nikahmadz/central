@@ -1,14 +1,10 @@
 ---
 name: default
 ---
-{%- assign use_base_theme = false -%}
 <!doctype html>
 <html lang='{{ page.lang | default: site.lang | default: "en-US" }}' data-layout="{{ layout.name }}">
 <head>{% include head.html %}</head>
 <body>
-{{ site }}
-{{ layout }}
-{{ use_base_theme }}
 <main id="_main">
 <div id="_layout">
 <header id="_header">{% include header.html %}</header>
