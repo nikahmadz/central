@@ -6,7 +6,7 @@ categories:
 
 # {{ page.title }}
 
-{{ site | jsonify }}
+{{ site | inspect }}
 
 <div style="margin-top:4rem"></div>
 
