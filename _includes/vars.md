@@ -26,20 +26,32 @@ header: {{ site.header }}
 cloudflare_analytics: {{ site.cloudflare_analytics }}
 google_analytics: {{ site.google_analytics }}
 
-time: {{ site.time }}
 url: {{ site.url }}
 baseurl: {{ site.baseurl }}
+time: {{ site.time }}
+timezone: {{ site.timezone }}
 source: {{ site.source }}
 destination: {{ site.destination }}
 safe: {{ site.safe }}
 disable_disk_cache: {{ site.disable_disk_cache }}
 ignore_theme_config: {{ site.ignore_theme_config }}
-exclude: {{ site.exclude | array_to_sentence_string }}
-include: {{ site.include | array_to_sentence_string }}
-keep_files: {{ site.keep_files | array_to_sentence_string }}
-timezone: {{ site.timezone }}
+exclude: {{ site.exclude | jsonify }}
+include: {{ site.include | jsonify }}
+keep_files: {{ site.keep_files | jsonify }}
 encoding: {{ site.encoding }}
-plugins_dir: {{ site.plugins_dir }}
+plugins_dir: {{ site.plugins_dir | jsonify }}
+layouts_dir: {{ site.layouts_dir }}
+show_drafts: {{ site.show_drafts }}
+future: {{ site.future }}
+unpublished: {{ site.unpublished }}
+lsi: {{ site.lsi }}
+limit_posts: {{ site.limit_posts }}
+force_polling: {{ site.force_polling }}
+verbose: {{ site.verbose }}
+quiet: {{ site.quiet }}
+incremental: {{ site.incremental }}
+profile: {{ site.profile }}
+strict_front_matter: {{ site.strict_front_matter }}
 
 ```
 
