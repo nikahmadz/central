@@ -34,8 +34,8 @@ destination: {{ site.destination }}
 safe: {{ site.safe }}
 disable_disk_cache: {{ site.disable_disk_cache }}
 ignore_theme_config: {{ site.ignore_theme_config }}
-exclude: {{ site.exclude }}
-include: {{ site.include }}
+exclude: {{ site.exclude | inspect }}
+include: {{ site.include | inspect }}
 keep_files: {{ site.keep_files }}
 timezone: {{ site.timezone }}
 encoding: {{ site.encoding }}
