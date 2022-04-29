@@ -13,19 +13,33 @@
 ```yml
 theme: {{ site.theme }}
 remote_theme: {{ site.remote_theme }}
+
 title: {{ site.title }}
 description: {{ site.description }}
+
 author: {{ site.author }}
 favicon: {{ site.favicon }}
 manifest: {{ site.manifest }}
+color_scheme: {{ site.color_scheme }}
+theme_color: {{ site.theme_color }}
+header: {{ site.header }}
+cloudflare_analytics: {{ site.cloudflare_analytics }}
+google_analytics: {{ site.google_analytics }}
+
 time: {{ site.time }}
 url: {{ site.url }}
 baseurl: {{ site.baseurl }}
-color_scheme: {{ site.color_scheme }}
-theme_color: {{ site.theme_color }}
-cloudflare_analytics: {{ site.cloudflare_analytics }}
-google_analytics: {{ site.google_analytics }}
-header: {{ site.header }}
+source: {{ site.source }}
+destination: {{ site.destination }}
+safe: {{ site.safe }}
+disable_disk_cache: {{ site.disable_disk_cache }}
+ignore_theme_config: {{ site.ignore_theme_config }}
+exclude: {{ site.exclude }}
+include: {{ site.include }}
+keep_files: {{ site.keep_files }}
+timezone: {{ site.timezone }}
+encoding: {{ site.encoding }}
+plugins_dir: {{ site.plugins_dir }}
 
 ```
 

@@ -4,12 +4,12 @@ remote_theme: nikahmadz/central
 
 title: Central # The title of your site
 # description: # A short description about your site
+
 favicon: favicon.ico
 # manifest: manifest.json
 # color_scheme: 'light dark'
 # theme_color: '#202020'
-
-# google_analytics: # Fill in your Google Analytics ID to track your website using Google Analytics
+# google_analytics: # Google Analytics ID
 
 sass: # sass configurations
   style: compressed
