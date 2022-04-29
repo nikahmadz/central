@@ -11,11 +11,11 @@
 ###### site
 
 ```yml
-theme: {{ site.theme }}
-remote_theme: {{ site.remote_theme }}
-
 title: {{ site.title }}
 description: {{ site.description }}
+
+theme: {{ site.theme }}
+remote_theme: {{ site.remote_theme }}
 
 author: {{ site.author }}
 favicon: {{ site.favicon }}
