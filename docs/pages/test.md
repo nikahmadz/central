@@ -7,13 +7,13 @@ categories:
 # {{ page.title }}
 
 {% assign none = false %}
-{% assign list = ['a'] %}
+{% assign list = "John,Paul,George,Ringo" | split: "," %}
 
 ```yml
 {{ none }}
 {{ list }}
-{% for v in ['source','destination','safe'] -%}
-{{ v }}
+{% for v in "source,destination,safe" | split: "," -%}
+{{ v }}: {{ site[v] }}
 {% endfor %}
 
 ```
