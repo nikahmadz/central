@@ -12,10 +12,14 @@ categories:
 ] %}
 
 ```yml
-{{ yes }}
 {{ none }}
-{% for v in [] -%}
-{{ v[0] }}: {{ v[1] }}
+{{ list }}
+{% for v in [
+'source',
+'destination',
+'safe'
+] -%}
+{{ v }}
 {% endfor %}
 source: {{ site.source }}
 destination: {{ site.destination }}
