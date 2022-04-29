@@ -15,6 +15,7 @@ sass: # sass configurations
   style: compressed
 
 exclude: # Exclude these files from production site
+- "node_modules"
 - "*.gemspec"
 - README.md
 - CONTRIBUTING.md
@@ -24,7 +25,7 @@ exclude: # Exclude these files from production site
 - Gemfile.lock
 - LICENSE.md
 
-# plugins: # jekyll plugins
+plugins: # jekyll plugins
 #  - jekyll-remote-theme
 #  - jekyll-paginate
 #  - jekyll-sitemap
