@@ -6,8 +6,6 @@ categories:
 
 # {{ page.title }}
 
-{{ site | inspect }}
-
 <div style="margin-top:4rem"></div>
 
 ***
