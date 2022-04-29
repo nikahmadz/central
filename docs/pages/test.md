@@ -7,11 +7,17 @@ categories:
 # {{ page.title }}
 
 {% assign none = false %}
-{% assign list = "source,destination,safe" | split: "," %}
+{% capture senarai %}
+source,
+destination,
+safe
+{% endcapture %}
+{% assign list = senarai | split: ", " %}
 
 ```yml
 {{ none }}
 {{ list | array_to_sentence_string }}
+{{ senarai }}
 {% for v in list -%}
 {{ v }}: {{ site[v] }}
 {% endfor %}
