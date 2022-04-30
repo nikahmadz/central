@@ -39,15 +39,50 @@ layouts_dir: {{ site.layouts_dir }}
 show_drafts: {{ site.show_drafts }}
 future: {{ site.future }}
 unpublished: {{ site.unpublished }}
-lsi: {{ site.lsi }}
 limit_posts: {{ site.limit_posts }}
 force_polling: {{ site.force_polling }}
 verbose: {{ site.verbose }}
 quiet: {{ site.quiet }}
-incremental: {{ site.incremental }}
 profile: {{ site.profile }}
 strict_front_matter: {{ site.strict_front_matter }}
+whitelist: {{ site.whitelist | jsonify }}
+highlighter: {{ site.highlighter }}
+lsi: {{ site.lsi }}
+excerpt_separator: {{ site.excerpt_separator }}
+incremental: {{ site.incremental }}
+permalink: {{ site.permalink }}
+paginate_path: {{ site.paginate_path }}
 
+liquid:
+  error_mode        : {{ site.liquid.error_mode }}
+  strict_filters    : {{ site.liquid.strict_filters }}
+  strict_variables  : {{ site.liquid.strict_variables }}
+
+markdown_ext: {{ site.markdown_ext }}
+markdown: {{ site.markdown }}
+
+kramdown:
+  auto_ids          : {{ site.kramdown.auto_ids }}
+  entity_output     : {{ site.kramdown.entity_output }}
+  toc_levels        : {{ site.kramdown.toc_levels | jsonify }}
+  smart_quotes      : {{ site.kramdown.smart_quotes | jsonify }}
+  input             : {{ site.kramdown.input }}
+  hard_wrap         : {{ site.kramdown.hard_wrap }}
+  footnote_nr       : {{ site.kramdown.footnote_nr }}
+  show_warnings     : {{ site.kramdown.show_warnings }}
+
+```
+
+###### site.plugins
+
+```yml
+{{ site.plugins | jsonify }}
+```
+
+###### site.defaults
+
+```yml
+{{ site.defaults | jsonify }}
 ```
 
 ###### site.github
