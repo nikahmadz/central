@@ -133,7 +133,7 @@ author:
 
 ```yml
 size: {{ site.posts.size | default:0 }}
-{% if site.posts %}yes{% endif %}
+{% if site.posts %}{{ site.posts[0] | jsonify }}{% endif %}
 ```
 
 ###### site.pages
@@ -146,6 +146,7 @@ size: {{ site.pages.size | default:0 }}
 
 ```yml
 size: {{ site.tags.size | default:0 }}
+{% if site.tags %}yes{% endif %}
 ```
 
 ###### site.categories
