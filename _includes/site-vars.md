@@ -194,14 +194,15 @@ size: {{ site.tags.size | default:0 }}
 size: {{ site.collections.size }}
 {% for collection in site.collections -%}
 -
+  label:  {{ collection.label }}
   directory: {{ collection.directory }}
   relative_directory: {{ collection.relative_directory }}
-  label:  {{ collection.label }}
   output: {{ collection.output }}
   permalink: {{ collection.permalink }}
+  files:
+    size: {{ collection.files.size | default:0 }}
   docs:
-    size: {{ collection.docs.size }}
-  files: {{ collection.files | jsonify }}
+    size: {{ collection.docs.size | default:0 }}
 {% endfor -%}
 ```
 

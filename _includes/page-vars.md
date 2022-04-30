@@ -1,24 +1,32 @@
 ###### page
 
 ```yml
-{% for v in page -%}
-{%- if v[0]!='content' and v[0]!='excerpt' -%}
-{{ v[0] }}: {{ v[1] }}
-{% endif %}{% endfor %}
-permalink: {{ page.permalink }}
+title: {{ page.title }}
+
+layout: {{ page.layout }}
+theme: {{ page.theme }}
+
+url:           {{ page.url }}
+dir:           {{ page.dir }}
+name:          {{ page.name }}
+path:          {{ page.path }}
+relative_path: {{ page.relative_path }}
+permalink:     {{ page.permalink }}
+date: {{ page.date }}
+published: {{ page.published }} # false # if you don't want to generate the post
 
 content:
   size: {{ page.content.size | default:0 }}
 
+output:
+  size: {{ page.output.size | default:0 }}
+
 excerpt:
   size: {{ page.excerpt.size | default:0 }}
-
-published: {{ page.published }} # false # if you don't want to generate the post
-
-date: {{ page.date }}
 
 tags: {{ page.tags | jsonify }}
 categories: {{ page.categories }}
 category: {{ page.category }}
+collection:    {{ page.collection }}
 
 ```
