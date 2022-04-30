@@ -186,8 +186,8 @@ size: {{ site.pages.size | default:0 }}
 
 ```yml
 size: {{ site.collections.size }}
-{% for v in list -%}
-{{ v }}
+{% for v in site.collections -%}
+{{ v | jsonify }}
 {% endfor -%}
 ```
 
