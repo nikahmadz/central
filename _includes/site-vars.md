@@ -169,63 +169,6 @@ size: {{ site.data.size | default:0 }}
 {{ site.data | jsonify }}
 ```
 
-###### site.posts
-
-```yml
-size: {{ site.posts.size | default:0 }}
-{% for post in site.posts -%}
--
-  title:  {{ post.title }}
-  date:   {{ post.date }}
-  layout: {{ post.layout }}
-  slug:   {{ post.slug }}
-  ext:    {{ post.ext }}
-  id:       {{ post.id }}
-  url:      {{ post.url }}
-  previous: {{ post.previous.id }}
-  next:     {{ post.next.id }}
-  path:          {{ post.path }}
-  relative_path: {{ post.relative_path }}
-
-  content:
-    size: {{ post.content.size | default:0 }}
-
-  output:
-    size: {{ post.output.size | default:0 }}
-
-  excerpt: {{ post.excerpt | jsonify }}
-
-  tags: {{ page.tags | jsonify }}
-  collection: {{ post.collection }}
-  categories: {{ post.categories | jsonify }}
-  draft: {{ post.draft }}
-
-{% endfor -%}
-```
-
-###### site.related_posts
-
-###### site.pages
-
-```yml
-size: {{ site.pages.size | default:0 }}
-{% for page in site.pages -%}
--
-  title: {{ page.title }}
-  url:   {{ page.url }}
-{% endfor -%}  
-```
-
-```yml
-{% for page in site.pages | sample -%}
--
-  title: {{ page.title }}
-  url:   {{ page.url }}
-  id:    {{ page.id }}
-  date:  {{ page.date }}
-{% endfor -%}  
-```
-
 ###### site.tags
 
 ```yml
@@ -265,6 +208,7 @@ size: {{ site.categories.size | default:0 }}
 
 ```yml
 size: {{ site.documents.size | default:0 }}
+{{ site.documents | jsonify }}
 ```
 
 ###### site.static_files
@@ -280,4 +224,56 @@ size: {{ site.static_files.size | default:0 }}
   collection: {{ file.collection }}
   modified_time: {{ file.modified_time }}
 {% endfor -%}
+```
+
+###### site.posts
+
+```yml
+size: {{ site.posts.size | default:0 }}
+{% for post in site.posts -%}
+-
+  title:  {{ post.title }}
+  date:   {{ post.date }}
+  layout: {{ post.layout }}
+  slug:   {{ post.slug }}
+  ext:    {{ post.ext }}
+  id:       {{ post.id }}
+  url:      {{ post.url }}
+  previous: {{ post.previous.id }}
+  next:     {{ post.next.id }}
+  path:          {{ post.path }}
+  relative_path: {{ post.relative_path }}
+
+  content:
+    size: {{ post.content.size | default:0 }}
+
+  output:
+    size: {{ post.output.size | default:0 }}
+
+  excerpt: {{ post.excerpt | jsonify }}
+
+  tags: {{ page.tags | jsonify }}
+  collection: {{ post.collection }}
+  categories: {{ post.categories | jsonify }}
+  draft: {{ post.draft }}
+
+{% endfor -%}
+```
+
+###### site.related_posts
+
+```yml
+size: {{ site.related_posts.size | default:0 }}
+{{ site.related_posts | jsonify }}
+```
+
+###### site.pages
+
+```yml
+size: {{ site.pages.size | default:0 }}
+{% for page in site.pages -%}
+-
+  title: {{ page.title }}
+  url:   {{ page.url }}
+{% endfor -%}  
 ```
