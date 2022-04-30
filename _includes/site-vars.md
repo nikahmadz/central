@@ -32,10 +32,10 @@ include: {{ site.include | jsonify }}
 exclude: {{ site.exclude | jsonify }}
 keep_files: {{ site.keep_files | jsonify }}
 collections_dir: {{ site.collections_dir }}
-data_dir: {{ site.data_dir }}
+data_dir:     {{ site.data_dir }}
 includes_dir: {{ site.includes_dir }}
-plugins_dir: {{ site.plugins_dir | jsonify }}
-layouts_dir: {{ site.layouts_dir }}
+layouts_dir:  {{ site.layouts_dir }}
+plugins_dir:  {{ site.plugins_dir }}
 show_drafts: {{ site.show_drafts }}
 future: {{ site.future }}
 unpublished: {{ site.unpublished }}
@@ -185,7 +185,15 @@ size: {{ site.pages.size | default:0 }}
 ###### site.collections
 
 ```yml
-{{ site.collections | jsonify }}
+size: {{ site.collections.size }}
+{% for v in list -%}
+{{ v }}:
+  directory: {{ site.collections.directory }}
+  relative_directory: {{ site.collections.relative_directory }}
+  label:  {{ site.collections.labe }}
+  output: {{ site.collections.output }}
+  permalink: {{ site.collections.permalink }}
+{% endfor -%}
 ```
 
 ###### site.categories
