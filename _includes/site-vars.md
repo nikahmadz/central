@@ -171,24 +171,29 @@ size: {{ site.posts.size | default:0 }}
 {% for post in site.posts -%}
 -
   title:  {{ post.title }}
-  date:	  {{ post.date }}
+  date:   {{ post.date }}
   layout: {{ post.layout }}
-  slug:	  {{ post.slug }}
-  ext:    {{ post.ext }}
-  id:            {{ post.id }}
-  url:           {{ post.url }}
+  slug:   {{ post.slug }}
   path:          {{ post.path }}
   relative_path: {{ post.relative_path }}
-  previous: {{ post.previous | jsonify }}
+  ext:      {{ post.ext }}
+  id:       {{ post.id }}
+  url:      {{ post.url }}
+  previous: {{ post.previous.id }}
+
   content:
     size: {{ post.content.size | default:0 }}
+
   output:
     size: {{ post.output.size | default:0 }}
-  excerpt: {{ post.excerpt }}
+
+  excerpt: {{ post.excerpt | escape_once }}
+
   tags: {{ page.tags | jsonify }}
   collection: {{ post.collection }}
   categories: {{ post.categories | jsonify }}
   draft: {{ post.draft }}
+
 {% endfor -%}
 ```
 
@@ -222,6 +227,7 @@ size: {{ site.collections.size }}
     size: {{ collection.files.size | default:0 }}
   docs:
     size: {{ collection.docs.size | default:0 }}
+
 {% endfor -%}
 ```
 
