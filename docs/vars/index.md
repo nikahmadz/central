@@ -1,5 +1,5 @@
 ---
-title: "Site's variables"
+title: Variables
 theme: base
 ---
 ## {{ page.title }}
