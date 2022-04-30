@@ -1,8 +1,9 @@
 ###### page
 
 ```yml
-title: {{ page.title }}
+# {% for v in page -%}{{ v[0] }} {% endfor %}
 
+title: {{ page.title }}
 layout: {{ page.layout }}
 theme: {{ page.theme }}
 
@@ -10,9 +11,7 @@ url:           {{ page.url }}
 dir:           {{ page.dir }}
 name:          {{ page.name }}
 path:          {{ page.path }}
-relative_path: {{ page.relative_path }}
-permalink:     {{ page.permalink }}
-date: {{ page.date }}
+
 published: {{ page.published }} # false # if you don't want to generate the post
 
 content:
@@ -24,10 +23,4 @@ output:
 excerpt:
   size: {{ page.excerpt.size | default:0 }}
 
-tags: {{ page.tags | jsonify }}
-categories: {{ page.categories }}
-category: {{ page.category }}
-collection:    {{ page.collection }}
-
-# {% for v in page -%}{{ v[0] }}, {% endfor %}
 ```

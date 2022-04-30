@@ -168,8 +168,27 @@ sass_dir: {{ site.sass_dir }}
 
 ```yml
 size: {{ site.posts.size | default:0 }}
-{% for v in site.posts -%}
-{{ v | jsonify }}
+{% for post in site.posts -%}
+-
+  title:  {{ post.title }}
+  date:	  {{ post.date }}
+  layout: {{ post.layout }}
+  slug:	  {{ post.slug }}
+  ext:    {{ post.ext }}
+  id:            {{ post.id }}
+  url:           {{ post.url }}
+  path:          {{ post.path }}
+  relative_path: {{ post.relative_path }}
+  previous: {{ post.previous | jsonify }}
+  content:
+    size: {{ post.content.size | default:0 }}
+  output:
+    size: {{ post.output.size | default:0 }}
+  excerpt: {{ post.excerpt }}
+  tags: {{ page.tags | jsonify }}
+  collection: {{ post.collection }}
+  categories: {{ post.categories | jsonify }}
+  draft: {{ post.draft }}
 {% endfor -%}
 ```
 
