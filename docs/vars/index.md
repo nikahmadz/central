@@ -4,7 +4,8 @@ theme: base
 ---
 ## {{ page.title }}
 
-{% include vars.md %}
+{% include layout-vars.md %}
+{% include site-vars.md %}
 {% include page-vars.md %}
 
 <div style="margin-top:4rem"></div>

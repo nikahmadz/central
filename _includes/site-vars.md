@@ -1,13 +1,5 @@
 <style> .markdown-body .highlight pre{max-height:400px} </style>
 
-###### layout
-
-```yml
-{% for v in layout -%}
-{{ v[0] }}: {{ v[1] }}
-{% endfor %}
-```
-
 ###### site
 
 ```yml
@@ -31,7 +23,7 @@ timezone: {{ site.timezone }}
 encoding: {{ site.encoding }}
 url: {{ site.url }}
 baseurl: {{ site.baseurl }}
-source: {{ site.source }}
+source:      {{ site.source }}
 destination: {{ site.destination }}
 safe: {{ site.safe }}
 disable_disk_cache: {{ site.disable_disk_cache }}
@@ -58,34 +50,34 @@ strict_front_matter: {{ site.strict_front_matter }}
 ###### site.github
 
 ```yml
-project_title: {{ site.github.project_title }}
+project_title:   {{ site.github.project_title }}
 project_tagline: {{ site.github.project_tagline }}
-api_url: {{ site.github.api_url }}
 baseurl: {{ site.github.baseurl }}
+api_url: {{ site.github.api_url }}
 build_revision: {{ site.github.build_revision }}
-clone_url: {{ site.github.clone_url }}
-contributors: {{ site.github.contributors.size | default:0 }}
-environment: {{ site.github.environment }}
-hostname: {{ site.github.hostname }}
-language: {{ site.github.language }}
-organization_members: {{ site.github.organization_members }}
-owner_name: {{ site.github.owner_name }}
-owner_url: {{ site.github.owner_url }}
-owner_gravatar_url: {{ site.github.owner_gravatar_url }}
-issues_url: {{ site.github.issues_url }}
-releases_url: {{ site.github.releases_url }}
-wiki_url: {{ site.github.wiki_url }}
-tar_url: {{ site.github.tar_url }}
-zip_url: {{ site.github.zip_url }}
-url: {{ site.github.url }}
-pages_env: {{ site.github.pages_env }}
+environment:    {{ site.github.environment }}
+hostname:       {{ site.github.hostname }}
+pages_env:      {{ site.github.pages_env }}
 pages_hostname: {{ site.github.pages_hostname }}
+owner_name:     {{ site.github.owner_name }}
+owner_url:          {{ site.github.owner_url }}
+owner_gravatar_url: {{ site.github.owner_gravatar_url }}
+repository_name: {{ site.github.repository_name }}
+repository_nwo:  {{ site.github.repository_nwo }}
+repository_url:  {{ site.github.repository_url }}
+clone_url:       {{ site.github.clone_url }}
+issues_url:      {{ site.github.issues_url }}
+releases_url:    {{ site.github.releases_url }}
+wiki_url:        {{ site.github.wiki_url }}
+tar_url:         {{ site.github.tar_url }}
+zip_url:         {{ site.github.zip_url }}
+url: {{ site.github.url }}
+language: {{ site.github.language }}
+contributors: {{ site.github.contributors.size | default:0 }}
+organization_members: {{ site.github.organization_members }}
 private: {{ site.github.private }}
 public_repositories: {{ site.github.public_repositories.size | default:0 }}
 releases: {{ site.github.releases.size | default:0 }}
-repository_name: {{ site.github.repository_name }}
-repository_nwo: {{ site.github.repository_nwo }}
-repository_url: {{ site.github.repository_url }}
 show_downloads: {{ site.github.show_downloads }}
 source: {{ site.github.source }}
 
