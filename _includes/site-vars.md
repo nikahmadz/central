@@ -187,7 +187,15 @@ size: {{ site.pages.size | default:0 }}
 ```yml
 size: {{ site.collections.size }}
 {% for v in site.collections -%}
-{{ v | jsonify }}
+-
+  directory: {{ collection.directory }}
+  relative_directory: {{ collection.relative_directory }}
+  label:  {{ collection.label }}
+  output: {{ collection.output }}
+  permalink: {{ collection.permalink }}
+  docs:
+    size: {{ collection.docs.size }}
+  files: {{ collection.files | jsonify }}
 {% endfor -%}
 ```
 
