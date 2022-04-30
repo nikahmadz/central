@@ -192,7 +192,7 @@ size: {{ site.tags.size | default:0 }}
 
 ```yml
 size: {{ site.collections.size }}
-{% for v in site.collections -%}
+{% for collection in site.collections -%}
 -
   directory: {{ collection.directory }}
   relative_directory: {{ collection.relative_directory }}

@@ -6,14 +6,19 @@
 {{ v[0] }}: {{ v[1] }}
 {% endif %}{% endfor %}
 permalink: {{ page.permalink }}
+
 content:
   size: {{ page.content.size | default:0 }}
 
 excerpt:
   size: {{ page.excerpt.size | default:0 }}
 
-tags: {{ page.tags | jsonify }}
-
 published: {{ page.published }} # false # if you don't want to generate the post
+
+date: {{ page.date }}
+
+tags: {{ page.tags | jsonify }}
+categories: {{ page.categories }}
+category: {{ page.category }}
 
 ```
