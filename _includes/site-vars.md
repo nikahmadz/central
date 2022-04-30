@@ -201,6 +201,12 @@ size: {{ site.posts.size | default:0 }}
 
 ```yml
 size: {{ site.pages.size | default:0 }}
+{% for page in site.pages -%}
+-
+  title: {{ page.title }}
+  url:           {{ page.url }}
+
+{% endfor -%}  
 ```
 
 ###### site.tags
@@ -234,5 +240,13 @@ size: {{ site.collections.size }}
 ###### site.categories
 
 ```yml
+size: {{ site.categories.size | default:0 }}
 {{ site.categories | jsonify }}
+```
+
+###### site.static_files
+
+```yml
+size: {{ site.static_files.size | default:0 }}
+{{ site.static_files | jsonify }}
 ```
