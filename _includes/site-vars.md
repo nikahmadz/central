@@ -137,9 +137,6 @@ sass_dir: {{ site.sass_dir }}
 
 ```yml
 size: {{ site.posts.size | default:0 }}
-{% if site.posts %}{% for v in site.posts[0] -%}
-{{ v[0] }}: {{ v[1] }}
-{% endfor %}{% endif %}
 ```
 
 ###### site.pages
@@ -151,18 +148,17 @@ size: {{ site.pages.size | default:0 }}
 ###### site.tags
 
 ```yml
-size: {{ site.tags.size | default:0 }}
-{% if site.tags %}yes{% endif %}
+{{ site.tags | jsonify }}
 ```
 
 ###### site.collections
 
 ```yml
-size: {{ site.collections.size | default:0 }}
+{{ site.collections | jsonify }}
 ```
 
 ###### site.categories
 
 ```yml
-size: {{ site.categories.size | default:0 }}
+{{ site.categories | jsonify }}
 ```
