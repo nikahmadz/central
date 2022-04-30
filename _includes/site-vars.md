@@ -173,11 +173,12 @@ size: {{ site.posts.size | default:0 }}
   layout: {{ post.layout }}
   slug:   {{ post.slug }}
   ext:    {{ post.ext }}
-  path:          {{ post.path }}
-  relative_path: {{ post.relative_path }}
   id:       {{ post.id }}
   url:      {{ post.url }}
   previous: {{ post.previous.id }}
+  next:     {{ post.next.id }}
+  path:          {{ post.path }}
+  relative_path: {{ post.relative_path }}
 
   content:
     size: {{ post.content.size | default:0 }}

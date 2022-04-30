@@ -3,14 +3,14 @@
 ```yml
 # {% for v in page -%}{{ v[0] }} {% endfor %}
 
-title: {{ page.title }}
+title:  {{ page.title }}
 layout: {{ page.layout }}
-theme: {{ page.theme }}
+theme:  {{ page.theme }}
 
-url:           {{ page.url }}
-dir:           {{ page.dir }}
-name:          {{ page.name }}
-path:          {{ page.path }}
+url:  {{ page.url }}
+dir:  {{ page.dir }}
+name: {{ page.name }}
+path: {{ page.path }}
 
 published: {{ page.published }} # false # if you don't want to generate the post
 
