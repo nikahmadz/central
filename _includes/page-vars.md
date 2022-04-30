@@ -29,4 +29,5 @@ categories: {{ page.categories }}
 category: {{ page.category }}
 collection:    {{ page.collection }}
 
+# {% for v in page -%}{{ v[0] }}, {% endif %}{% endfor %}
 ```
