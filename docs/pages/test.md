@@ -7,8 +7,9 @@ categories:
 # {{ page.title }}
 
 ```yml
-{%- assign list = "source,destination" | split:"," -%}
-{% for v in list %}{{ v }}: {{ site[v] }}
+{%- assign list = "source,destination" | split:"," %}
+{% for v in list -%}
+{{ v }}: {{ site[v] }}
 {% endfor -%}
 
 ```
