@@ -46,9 +46,10 @@ quiet: {{ site.quiet }}
 profile: {{ site.profile }}
 strict_front_matter: {{ site.strict_front_matter }}
 whitelist: {{ site.whitelist | jsonify }}
+plugins:   {{ site.plugins | jsonify }}
 highlighter: {{ site.highlighter }}
 lsi: {{ site.lsi }}
-excerpt_separator: {{ site.excerpt_separator }}
+excerpt_separator: {{ site.excerpt_separator | escape_once }}
 incremental: {{ site.incremental }}
 permalink: {{ site.permalink }}
 paginate_path: {{ site.paginate_path }}
@@ -64,8 +65,8 @@ markdown: {{ site.markdown }}
 kramdown:
   auto_ids          : {{ site.kramdown.auto_ids }}
   entity_output     : {{ site.kramdown.entity_output }}
-  toc_levels        : {{ site.kramdown.toc_levels | jsonify }}
-  smart_quotes      : {{ site.kramdown.smart_quotes | jsonify }}
+  toc_levels        : {{ site.kramdown.toc_levels }}
+  smart_quotes      : {{ site.kramdown.smart_quotes }}
   input             : {{ site.kramdown.input }}
   hard_wrap         : {{ site.kramdown.hard_wrap }}
   footnote_nr       : {{ site.kramdown.footnote_nr }}
@@ -73,15 +74,10 @@ kramdown:
 
 ```
 
-###### site.plugins
-
-```yml
-{{ site.plugins | jsonify }}
-```
-
 ###### site.defaults
 
 ```yml
+size: {{ site.defaults.size | default:0 }}
 {{ site.defaults | jsonify }}
 ```
 
