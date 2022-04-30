@@ -19,8 +19,8 @@ google_analytics: {{ site.google_analytics }}
 time: {{ site.time }}
 timezone: {{ site.timezone }}
 encoding: {{ site.encoding }}
-url: {{ site.url }}
-baseurl: {{ site.baseurl }}
+url:         {{ site.url }}
+baseurl:     {{ site.baseurl }}
 source:      {{ site.source }}
 destination: {{ site.destination }}
 safe: {{ site.safe }}
@@ -70,13 +70,6 @@ kramdown:
   footnote_nr       : {{ site.kramdown.footnote_nr }}
   show_warnings     : {{ site.kramdown.show_warnings }}
 
-```
-
-###### site.defaults
-
-```yml
-size: {{ site.defaults.size | default:0 }}
-{{ site.defaults | jsonify }}
 ```
 
 ###### site.github
@@ -162,6 +155,20 @@ sass_dir: {{ site.sass_dir }}
 {% endfor %}
 ```
 
+###### site.defaults
+
+```yml
+size: {{ site.defaults.size | default:0 }}
+{{ site.defaults | jsonify }}
+```
+
+###### site.data
+
+```yml
+size: {{ site.data.size | default:0 }}
+{{ site.data | jsonify }}
+```
+
 ###### site.posts
 
 ```yml
@@ -196,6 +203,8 @@ size: {{ site.posts.size | default:0 }}
 {% endfor -%}
 ```
 
+###### site.related_posts
+
 ###### site.pages
 
 ```yml
@@ -204,6 +213,16 @@ size: {{ site.pages.size | default:0 }}
 -
   title: {{ page.title }}
   url:   {{ page.url }}
+{% endfor -%}  
+```
+
+```yml
+{% for page in site.pages | sample -%}
+-
+  title: {{ page.title }}
+  url:   {{ page.url }}
+  id:    {{ page.id }}
+  date:  {{ page.date }}
 {% endfor -%}  
 ```
 
@@ -240,6 +259,12 @@ size: {{ site.collections.size }}
 ```yml
 size: {{ site.categories.size | default:0 }}
 {{ site.categories | jsonify }}
+```
+
+###### site.documents
+
+```yml
+size: {{ site.documents.size | default:0 }}
 ```
 
 ###### site.static_files
