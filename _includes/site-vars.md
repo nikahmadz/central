@@ -211,6 +211,7 @@ size: {{ site.documents.size | default:0 }}
 {% for file in site.documents -%}
 - id: {{ file.id }}
 {% endfor -%}
+
 ```
 
 ###### site.static_files
@@ -226,6 +227,7 @@ size: {{ site.static_files.size | default:0 }}
   collection: {{ file.collection }}
   modified_time: {{ file.modified_time }}
 {% endfor -%}
+
 ```
 
 ###### site.posts
@@ -267,6 +269,7 @@ size: {{ site.posts.size | default:0 }}
 ```yml
 size: {{ site.related_posts.size | default:0 }}
 {{ site.related_posts | jsonify }}
+
 ```
 
 ###### site.pages
@@ -277,5 +280,6 @@ size: {{ site.pages.size | default:0 }}
 -
   title: {{ page.title }}
   url:   {{ page.url }}
-{% endfor -%}  
+{% endfor -%}
+
 ```
