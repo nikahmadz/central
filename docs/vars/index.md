@@ -1,6 +1,7 @@
 ---
 title: Variables
 theme: base
+permalink: vars
 ---
 ## {{ page.title }}
 
