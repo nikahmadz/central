@@ -31,6 +31,9 @@ ignore_theme_config: {{ site.ignore_theme_config }}
 include: {{ site.include | jsonify }}
 exclude: {{ site.exclude | jsonify }}
 keep_files: {{ site.keep_files | jsonify }}
+collections_dir: {{ site.collections_dir }}
+data_dir: {{ site.data_dir }}
+includes_dir: {{ site.includes_dir }}
 plugins_dir: {{ site.plugins_dir | jsonify }}
 layouts_dir: {{ site.layouts_dir }}
 show_drafts: {{ site.show_drafts }}
@@ -124,6 +127,7 @@ author:
 ###### site.sass
 
 ```yml
+sass_dir: {{ site.sass_dir }}
 {% for v in site.sass -%}
 {{ v[0] }}: {{ v[1] }}
 {% endfor %}
@@ -133,7 +137,9 @@ author:
 
 ```yml
 size: {{ site.posts.size | default:0 }}
-{% if site.posts %}{{ site.posts[0] | jsonify }}{% endif %}
+{% if site.posts %}{% for v in site.posts[0] -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}{% endif %}
 ```
 
 ###### site.pages
@@ -147,6 +153,12 @@ size: {{ site.pages.size | default:0 }}
 ```yml
 size: {{ site.tags.size | default:0 }}
 {% if site.tags %}yes{% endif %}
+```
+
+###### site.collections
+
+```yml
+size: {{ site.collections.size | default:0 }}
 ```
 
 ###### site.categories
