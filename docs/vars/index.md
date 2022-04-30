@@ -3,6 +3,7 @@ title: Variables
 theme: base
 permalink: vars
 ---
+<style> .markdown-body .highlight pre{max-height:400px} </style>
 ## {{ page.title }}
 
 {% include layout-vars.md %}
