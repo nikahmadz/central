@@ -133,6 +133,7 @@ author:
 
 ```yml
 size: {{ site.posts.size | default:0 }}
+{% if site.posts %}yes{% endif %}
 ```
 
 ###### site.pages
