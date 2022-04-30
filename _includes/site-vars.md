@@ -187,12 +187,7 @@ size: {{ site.pages.size | default:0 }}
 ```yml
 size: {{ site.collections.size }}
 {% for v in list -%}
-{{ v }}:
-  directory: {{ site.collections.directory }}
-  relative_directory: {{ site.collections.relative_directory }}
-  label:  {{ site.collections.labe }}
-  output: {{ site.collections.output }}
-  permalink: {{ site.collections.permalink }}
+{{ v }}
 {% endfor -%}
 ```
 
