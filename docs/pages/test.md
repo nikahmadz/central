@@ -8,7 +8,7 @@ categories:
 
 ```yml
 {%- assign list = "source,destination" | split:"," -%}
-{%- for v in list %}{{ v }}: {{ site[v] }}
+{% for v in list %}{{ v }}: {{ site[v] }}
 {% endfor -%}
 
 ```
