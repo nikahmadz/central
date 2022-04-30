@@ -168,6 +168,9 @@ sass_dir: {{ site.sass_dir }}
 
 ```yml
 size: {{ site.posts.size | default:0 }}
+{% for v in site.posts -%}
+{{ v | jsonify }}
+{% endfor -%}
 ```
 
 ###### site.pages
@@ -179,7 +182,10 @@ size: {{ site.pages.size | default:0 }}
 ###### site.tags
 
 ```yml
-{{ site.tags | jsonify }}
+size: {{ site.tags.size | default:0 }}
+{% for v in site.tags -%}
+{{ v | jsonify }}
+{% endfor -%}
 ```
 
 ###### site.collections

@@ -5,6 +5,7 @@
 {%- if v[0]!='content' and v[0]!='excerpt' -%}
 {{ v[0] }}: {{ v[1] }}
 {% endif %}{% endfor %}
+permalink: {{ page.permalink }}
 content:
   size: {{ page.content.size | default:0 }}
 
