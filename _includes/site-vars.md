@@ -178,6 +178,13 @@ size: {{ site.tags.size | default:0 }}
 {% endfor -%}
 ```
 
+###### site.categories
+
+```yml
+size: {{ site.categories.size | default:0 }}
+{{ site.categories | jsonify }}
+```
+
 ###### site.collections
 
 ```yml
@@ -197,18 +204,13 @@ size: {{ site.collections.size }}
 {% endfor -%}
 ```
 
-###### site.categories
-
-```yml
-size: {{ site.categories.size | default:0 }}
-{{ site.categories | jsonify }}
-```
-
 ###### site.documents
 
 ```yml
 size: {{ site.documents.size | default:0 }}
-{{ site.documents | jsonify }}
+{% for file in site.documents -%}
+- id: {{ file.id }}
+{% endfor -%}
 ```
 
 ###### site.static_files
