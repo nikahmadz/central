@@ -49,7 +49,7 @@ whitelist: {{ site.whitelist | jsonify }}
 plugins:   {{ site.plugins | jsonify }}
 highlighter: {{ site.highlighter }}
 lsi: {{ site.lsi }}
-excerpt_separator: {{ site.excerpt_separator | escape_once }}
+excerpt_separator: {{ site.excerpt_separator | jsonify }}
 incremental: {{ site.incremental }}
 permalink: {{ site.permalink }}
 paginate_path: {{ site.paginate_path }}
@@ -174,9 +174,9 @@ size: {{ site.posts.size | default:0 }}
   date:   {{ post.date }}
   layout: {{ post.layout }}
   slug:   {{ post.slug }}
+  ext:    {{ post.ext }}
   path:          {{ post.path }}
   relative_path: {{ post.relative_path }}
-  ext:      {{ post.ext }}
   id:       {{ post.id }}
   url:      {{ post.url }}
   previous: {{ post.previous.id }}
@@ -187,7 +187,7 @@ size: {{ site.posts.size | default:0 }}
   output:
     size: {{ post.output.size | default:0 }}
 
-  excerpt: {{ post.excerpt | escape_once }}
+  excerpt: {{ post.excerpt | jsonify }}
 
   tags: {{ page.tags | jsonify }}
   collection: {{ post.collection }}
@@ -204,8 +204,7 @@ size: {{ site.pages.size | default:0 }}
 {% for page in site.pages -%}
 -
   title: {{ page.title }}
-  url:           {{ page.url }}
-
+  url:   {{ page.url }}
 {% endfor -%}  
 ```
 
@@ -248,5 +247,13 @@ size: {{ site.categories.size | default:0 }}
 
 ```yml
 size: {{ site.static_files.size | default:0 }}
-{{ site.static_files | jsonify }}
+{% for file in site.static_files -%}
+-
+  basename: {{ file.basename }}
+  name:     {{ file.name }}
+  extname:  {{ file.extname }}
+  path:     {{ file.path }}
+  collection: {{ file.collection }}
+  modified_time: {{ file.modified_time }}
+{% endfor -%}
 ```
