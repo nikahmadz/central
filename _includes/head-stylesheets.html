@@ -1,3 +1,4 @@
+{%- include vars.html -%}
 <meta name="color-scheme" content='{{ color_scheme | default: "light dark" }}' id="_color-scheme" />
 <meta name="theme-color"  content='{{ theme_color | default: "#202020" }}' />
 <link id="_style" rel="stylesheet" href='{{ site.baseurl }}/assets/{{ page.theme | default: "base" }}/css/style.css?v={{ site.github.build_revision }}' />
