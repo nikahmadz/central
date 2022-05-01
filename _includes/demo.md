@@ -1,4 +1,3 @@
-{%- include vars.html -%}
 This template helps you build websites on **GitHub**.
 It has everything pre-configured to get you started right away.
 You can write your content using any code editor you like.
