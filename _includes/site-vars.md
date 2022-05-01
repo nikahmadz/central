@@ -15,6 +15,7 @@ theme_color  : {{ site.theme_color }}
 header       : {{ site.header }}
 cloudflare_analytics : {{ site.cloudflare_analytics }}
 google_analytics     : {{ site.google_analytics }}
+use_base_theme : {{ site.use_base_theme }}
 
 encoding      : {{ site.encoding }}
 baseurl       : {{ site.baseurl }}
