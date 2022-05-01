@@ -16,13 +16,13 @@ header       : {{ site.header }}
 cloudflare_analytics : {{ site.cloudflare_analytics }}
 google_analytics     : {{ site.google_analytics }}
 
-encoding    : {{ site.encoding }}
-baseurl     : {{ site.baseurl }}
-url         : {{ site.url }}
+encoding      : {{ site.encoding }}
+baseurl       : {{ site.baseurl }}
+url           : {{ site.url }}
+time          : {{ site.time }}
+timezone      : {{ site.timezone }}
 paginate_path : {{ site.paginate_path }}
 permalink     : {{ site.permalink }}
-time        : {{ site.time }}
-timezone    : {{ site.timezone }}
 
 source          : {{ site.source }}
 destination     : {{ site.destination }}
@@ -86,13 +86,10 @@ baseurl         : {{ site.github.baseurl }}
 url             : {{ site.github.url }}
 api_url         : {{ site.github.api_url }}
 language        : {{ site.github.language }}
-private         : {{ site.github.private }}
-show_downloads  : {{ site.github.show_downloads }}
 contributors    : {{ site.github.contributors.size | default:0 }}
 releases        : {{ site.github.releases.size | default:0 }}
-
-build_revision  : {{ site.github.build_revision }}
-source          : {{ site.github.source }}
+private         : {{ site.github.private }}
+show_downloads  : {{ site.github.show_downloads }}
 
 environment     : {{ site.github.environment }}
 hostname        : {{ site.github.hostname }}
@@ -100,10 +97,13 @@ hostname        : {{ site.github.hostname }}
 pages_env       : {{ site.github.pages_env }}
 pages_hostname  : {{ site.github.pages_hostname }}
 
+build_revision  : {{ site.github.build_revision }}
+source          : {{ site.github.source }}
+
 clone_url       : {{ site.github.clone_url }}
+wiki_url        : {{ site.github.wiki_url }}
 issues_url      : {{ site.github.issues_url }}
 releases_url    : {{ site.github.releases_url }}
-wiki_url        : {{ site.github.wiki_url }}
 tar_url         : {{ site.github.tar_url }}
 zip_url         : {{ site.github.zip_url }}
 
@@ -205,8 +205,8 @@ size: {{ site.collections.size }}
   directory : {{ collection.directory }}
   permalink : {{ collection.permalink }}
   output    : {{ collection.output }}
-  files: size: {{ collection.files.size | default:0 }}
-  docs: size: {{ collection.docs.size | default:0 }}
+  files     : size: {{ collection.files.size | default:0 }}
+  docs      : size: {{ collection.docs.size | default:0 }}
 
 {% endfor -%}
 ```
@@ -216,7 +216,7 @@ size: {{ site.collections.size }}
 ```yml
 size: {{ site.documents.size | default:0 }}
 {% for file in site.documents -%}
-- {{ file.collection }}: {{ file.url }}
+- {{ file.collection }}: url: {{ file.url }}
 {% endfor %}
 
 ```
@@ -228,11 +228,11 @@ size: {{ site.static_files.size | default:0 }}
 # html_files: []
 {% for file in site.static_files -%}
 -
-  basename   : {{ file.basename }}
-  name       : {{ file.name }}
-  path       : {{ file.path }}
-  extname    : {{ file.extname }}
-  collection : {{ file.collection }}
+  basename      : {{ file.basename }}
+  name          : {{ file.name }}
+  path          : {{ file.path }}
+  extname       : {{ file.extname }}
+  collection    : {{ file.collection }}
   modified_time : {{ file.modified_time }}
 {% endfor %}
 
@@ -256,16 +256,14 @@ size: {{ site.posts.size | default:0 }}
   path          : {{ post.path }}
   relative_path : {{ post.relative_path }}
 
-  content  : size: {{ post.content.size | default:0 }}
+  content : size: {{ post.content.size | default:0 }}
+  output  : size: {{ post.output.size | default:0 }}
+  excerpt : {{ post.excerpt | jsonify }}
 
-  output   : size: {{ post.output.size | default:0 }}
-
-  excerpt  : {{ post.excerpt | jsonify }}
-
-  draft : {{ post.draft }}
+  draft      : {{ post.draft }}
   collection : {{ post.collection }}
   categories : {{ post.categories | jsonify }}
-  tags  : {{ page.tags | jsonify }}
+  tags       : {{ page.tags | jsonify }}
 
 {% endfor -%}
 ```
@@ -283,9 +281,9 @@ size: {{ site.pages.size | default:0 }}
 # html_pages: []
 {% for page in site.pages -%}
 -
-  title  : {{ page.title }}
-  url    : {{ page.url }}
-  path   : {{ page.path }}
+  title     : {{ page.title }}
+  url       : {{ page.url }}
+  path      : {{ page.path }}
   published : {{ page.published }}
 {% endfor %}
 
