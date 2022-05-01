@@ -10,7 +10,7 @@ When you commit your code to your repository, **GitHub Pages** will build your w
 {: .text-grey }
 
 [intro]:  https://nikahmadz.github.io/central/ "Introduction to Pages"
-[how]:    https://nikahmadz.github.io/central/docs/get-started "Find out how you can use this template to build websites"
+[how]:    https://github.com/nikahmadz/central/#get-started "Find out how you can use this template to build websites"
 [source]: https://github.com/nikahmadz/central "View source on Github"
 
 ***
