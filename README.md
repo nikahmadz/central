@@ -19,9 +19,9 @@ When you commit to your repository, **GitHub Pages** will build your website fro
 **[Prime](//nikahmadz.github.io/central/demo/prime)**
 **[Primer](//nikahmadz.github.io/central/demo/primer)**
 
-## Getting started
+## Get started
 
-Setup these files in your repository.
+Begin with these files in your repository.
 Then, [activate **GitHub Pages**](#activating-github-pages) to publish your website.
 
 - `_config.yml`
@@ -43,8 +43,8 @@ Then, [activate **GitHub Pages**](#activating-github-pages) to publish your webs
 
 1. Go to **GitHub Pages Settings** of your repository:
     `//github.com/<user-name>/<repo-name>/settings/pages`
-2. Scroll down to the **Source** section.
-3. Choose the source of your website files and hit **Save**.  eg: `main/(root)`
+2. Scroll down to the **Source** section. Choose the source of your website files (where the `_config.yml` file is located) eg: `main/(root)`
+3. Hit **Save**.
 
 - Your app will be accessible at `//<user-name>.github.io/<repo-name>`.
 
@@ -106,11 +106,9 @@ Apply custom styles using Liquid
 [Footnote][^ref]
 ![Image](src)
 
-{% if page.matter %}add logics{% endif %}
-
-include ready-made-blocks like:
-{% include edit.html %}
-
+{% include ready-made-blocks.html %}
+{% assign variable = 'as you like' %}
+add logics {% if variable %}to your site{% endif %}
 
 ```
 

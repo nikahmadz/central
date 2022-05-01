@@ -3,7 +3,7 @@
 # Change log
 
 ## v.1.4
-- adding features
+- adding features: vars
 
 ## v.1.3
 - update central theme, add other themes
