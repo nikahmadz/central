@@ -203,7 +203,7 @@ Make a list of all the posts you have:
 
 If you link to a missing page, you'll see [an error](../404 "Page not found").
 
-{% if site.use_base_theme %}
+{% if layout.use_base_theme %}
 ## Theme control
 
 Some layout allows user to switch between ***light*** and ***dark*** theme.
