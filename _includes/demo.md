@@ -1,4 +1,6 @@
 {% include vars.html %}
+use_x : {{ use_x }}
+layout.use_x : {{ layout.use_x }}
 
 This template helps you build websites on **GitHub**.
 It has everything pre-configured to get you started right away.
