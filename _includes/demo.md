@@ -1,3 +1,5 @@
+{% include vars.html %}
+
 This template helps you build websites on **GitHub**.
 It has everything pre-configured to get you started right away.
 You can write your content using any code editor you like.
@@ -203,7 +205,7 @@ Make a list of all the posts you have:
 
 If you link to a missing page, you'll see [an error](../404 "Page not found").
 
-{% if layout.use_base_theme %}
+{% if use_base_theme %}
 ## Theme control
 
 Some layout allows user to switch between ***light*** and ***dark*** theme.
