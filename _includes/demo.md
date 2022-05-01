@@ -22,7 +22,7 @@ You can write <span class="text-red">hero texts</span> too
 
 ## Better control over your content
 
-![Small image](https://picsum.photos/id/299/400/300){: .centered.float-sm-right.m-sm-4 }
+![Small image](https://picsum.photos/id/299/400/300){: .centered.float-sm-right.m-sm-4 width=400 height=300 }
 
 Use <code>big-first</code> to enlarge the first letter of a paragraph.
 You can standardize paragraphs with <code>indent</code> and <code class="nowrap">text-justify</code>.
