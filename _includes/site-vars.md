@@ -166,7 +166,9 @@ sass_dir: {{ site.sass_dir }}
 
 ```yml
 size: {{ site.defaults.size | default:0 }}
-{{ site.defaults | jsonify }}
+{% for v in site.defaults -%}
+{{ v[0] }}: {{ v[1] }}
+{% endfor %}
 ```
 
 ###### site.data
@@ -180,8 +182,8 @@ size: {{ site.data.size | default:0 }}
 
 ```yml
 size: {{ site.tags.size | default:0 }}
-{% for v in site.tags -%}
-{{ v | jsonify }}
+{% for tag in site.tags -%}
+{{ tag | jsonify }}
 {% endfor -%}
 ```
 
@@ -199,14 +201,12 @@ size: {{ site.collections.size }}
 {% for collection in site.collections -%}
 -
   label:  {{ collection.label }}
-  directory: {{ collection.directory }}
-  relative_directory: {{ collection.relative_directory }}
-  output: {{ collection.output }}
-  permalink: {{ collection.permalink }}
-  files:
-    size: {{ collection.files.size | default:0 }}
-  docs:
-    size: {{ collection.docs.size | default:0 }}
+  relative_directory : {{ collection.relative_directory }}
+  directory : {{ collection.directory }}
+  permalink : {{ collection.permalink }}
+  output    : {{ collection.output }}
+  files: size: {{ collection.files.size | default:0 }}
+  docs: size: {{ collection.docs.size | default:0 }}
 
 {% endfor -%}
 ```
@@ -216,8 +216,8 @@ size: {{ site.collections.size }}
 ```yml
 size: {{ site.documents.size | default:0 }}
 {% for file in site.documents -%}
-- id: {{ file.id }}
-{% endfor -%}
+- {{ file.collection }}: {{ file.url }}
+{% endfor %}
 
 ```
 
@@ -225,15 +225,16 @@ size: {{ site.documents.size | default:0 }}
 
 ```yml
 size: {{ site.static_files.size | default:0 }}
+# html_files: []
 {% for file in site.static_files -%}
 -
-  basename: {{ file.basename }}
-  name:     {{ file.name }}
-  extname:  {{ file.extname }}
-  path:     {{ file.path }}
-  collection: {{ file.collection }}
-  modified_time: {{ file.modified_time }}
-{% endfor -%}
+  basename   : {{ file.basename }}
+  name       : {{ file.name }}
+  path       : {{ file.path }}
+  extname    : {{ file.extname }}
+  collection : {{ file.collection }}
+  modified_time : {{ file.modified_time }}
+{% endfor %}
 
 ```
 
@@ -243,30 +244,28 @@ size: {{ site.static_files.size | default:0 }}
 size: {{ site.posts.size | default:0 }}
 {% for post in site.posts -%}
 -
-  title:  {{ post.title }}
-  date:   {{ post.date }}
-  layout: {{ post.layout }}
-  slug:   {{ post.slug }}
-  ext:    {{ post.ext }}
-  id:       {{ post.id }}
-  url:      {{ post.url }}
-  previous: {{ post.previous.id }}
-  next:     {{ post.next.id }}
-  path:          {{ post.path }}
-  relative_path: {{ post.relative_path }}
+  title    : {{ post.title }}
+  date     : {{ post.date }}
+  layout   : {{ post.layout }}
+  ext      : {{ post.ext }}
+  slug     : {{ post.slug }}
+  id       : {{ post.id }}
+  url      : {{ post.url }}
+  previous : {{ post.previous.id }}
+  next     : {{ post.next.id }}
+  path          : {{ post.path }}
+  relative_path : {{ post.relative_path }}
 
-  content:
-    size: {{ post.content.size | default:0 }}
+  content  : size: {{ post.content.size | default:0 }}
 
-  output:
-    size: {{ post.output.size | default:0 }}
+  output   : size: {{ post.output.size | default:0 }}
 
-  excerpt: {{ post.excerpt | jsonify }}
+  excerpt  : {{ post.excerpt | jsonify }}
 
-  tags: {{ page.tags | jsonify }}
-  collection: {{ post.collection }}
-  categories: {{ post.categories | jsonify }}
-  draft: {{ post.draft }}
+  draft : {{ post.draft }}
+  collection : {{ post.collection }}
+  categories : {{ post.categories | jsonify }}
+  tags  : {{ page.tags | jsonify }}
 
 {% endfor -%}
 ```
@@ -275,18 +274,19 @@ size: {{ site.posts.size | default:0 }}
 
 ```yml
 size: {{ site.related_posts.size | default:0 }}
-{{ site.related_posts | jsonify }}
-
 ```
 
 ###### site.pages
 
 ```yml
 size: {{ site.pages.size | default:0 }}
+# html_pages: []
 {% for page in site.pages -%}
 -
-  title: {{ page.title }}
-  url:   {{ page.url }}
-{% endfor -%}
+  title  : {{ page.title }}
+  url    : {{ page.url }}
+  path   : {{ page.path }}
+  published : {{ page.published }}
+{% endfor %}
 
 ```
