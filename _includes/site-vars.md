@@ -232,7 +232,6 @@ size: {{ site.static_files.size | default:0 }}
   name          : {{ file.name }}
   path          : {{ file.path }}
   extname       : {{ file.extname }}
-  collection    : {{ file.collection }}
   modified_time : {{ file.modified_time }}
 {% endfor %}
 
